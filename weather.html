@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        BootKit - weather
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">WEATHER</h1>
+
+        <p class="lead bk-fg-gray">
+            A combination of the best weather icon SVG set and specific layouts make for great widgets.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg bk-300">Weather Icons</h2>
+
+        <p class="lead">
+            This SVG icon set contains 123 beautifully crafted weather themed icons.<br>
+            <a href="http://erikflowers.github.io/weather-icons/">Plugin page</a>.
+        </p>
+
+        <h4>Examples</h4>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-success bk-fg-white text-center bk-pd-t-30 bk-pd-b-30">
+                        <h1 class="bk-mg-off-t"> -2°C</h1>
+                        <i class="wi wi-day-lightning fa-5x bk-pd-t-20 bk-pd-b-20"></i>
+                        <h3 class="bk-mg-off">HELSINKI</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-fg-primary text-center bk-pd-t-30 bk-pd-b-30">
+                        <h1 class="bk-mg-off-t"> 57°F</h1>
+                        <i class="wi wi-day-lightning fa-5x bk-pd-t-20 bk-pd-b-20"></i>
+                        <h3 class="bk-mg-off">BOSTON</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-warning bk-fg-danger text-center bk-pd-t-30 bk-pd-b-30">
+                        <h1 class="bk-mg-off-t"> 33°C</h1>
+                        <i class="wi wi-day-lightning fa-5x bk-pd-t-20 bk-pd-b-20"></i>
+                        <h3 class="bk-mg-off">NEW DEHLI</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-danger bk-fg-white bk-pd-off-b bk-pd-t-15">
+                        <div class="row">
+                            <div class="col-xs-4 bk-vcenter">
+                                <h2 class="bk-mg-off">18°C</h2>
+                            </div>
+                            <div class="col-xs-8 bk-vcenter text-right">
+                                <h4 class="bk-mg-off"><i class="fa fa-map-marker"></i> LONDON</h4>
+                            </div>
+                        </div>
+                        <div class="text-center bk-pd-b-20 bk-pd-t-20">
+                            <i class="wi wi-rain-wind fa-5x"></i>
+                            <i class="fa fa-long-arrow-right fa-2x bk-pd-l-10 bk-pd-r-10"></i>
+                            <i class="wi wi-day-cloudy-gusts fa-5x"></i>
+                        </div>
+                        <div class="row bk-mg-t-15 bk-mg-b-10">
+                            <div class="col-xs-6">
+                                Feels like: 16°
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                Humidity: 62%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-info bk-fg-white bk-pd-off-b bk-pd-t-15">
+                        <div class="row">
+                            <div class="col-xs-4 bk-vcenter">
+                                <h2 class="bk-mg-off">25°</h2>
+                            </div>
+                            <div class="col-xs-8 bk-vcenter text-right">
+                                <h4 class="bk-mg-off"><i class="fa fa-map-marker"></i> BERLIN</h4>
+                            </div>
+                        </div>
+                        <div class="text-center bk-pd-b-20 bk-pd-t-20">
+                            <i class="wi wi-cloudy-windy fa-5x"></i>
+                            <i class="fa fa-long-arrow-right fa-2x bk-pd-l-10 bk-pd-r-10"></i>
+                            <i class="wi wi-day-sunny fa-5x"></i>
+                        </div>
+                        <div class="row bk-mg-t-15 bk-mg-b-10">
+                            <div class="col-xs-6">
+                                Feels like: 27°
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                Humidity: 41%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-bg-success bk-fg-white text-center bk-pd-t-30 bk-pd-b-30&quot;&gt;
+                &lt;h1 class=&quot;bk-mg-off-t&quot;&gt; -2&deg;C&lt;/h1&gt;
+                &lt;i class=&quot;wi wi-day-lightning fa-5x bk-pd-t-20 bk-pd-b-20&quot;&gt;&lt;/i&gt;
+                &lt;h3 class=&quot;bk-mg-off&quot;&gt;HELSINKI&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-bg-white bk-fg-primary text-center bk-pd-t-30 bk-pd-b-30&quot;&gt;
+                &lt;h1 class=&quot;bk-mg-off-t&quot;&gt; 57&deg;F&lt;/h1&gt;
+                &lt;i class=&quot;wi wi-day-lightning fa-5x bk-pd-t-20 bk-pd-b-20&quot;&gt;&lt;/i&gt;
+                &lt;h3 class=&quot;bk-mg-off&quot;&gt;BOSTON&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-bg-warning bk-fg-danger text-center bk-pd-t-30 bk-pd-b-30&quot;&gt;
+                &lt;h1 class=&quot;bk-mg-off-t&quot;&gt; 33&deg;C&lt;/h1&gt;
+                &lt;i class=&quot;wi wi-day-lightning fa-5x bk-pd-t-20 bk-pd-b-20&quot;&gt;&lt;/i&gt;
+                &lt;h3 class=&quot;bk-mg-off&quot;&gt;NEW DEHLI&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-bg-danger bk-fg-white bk-pd-off-b bk-pd-t-15&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-4 bk-vcenter&quot;&gt;
+                        &lt;h2 class=&quot;bk-mg-off&quot;&gt;18&deg;C&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-8 bk-vcenter text-right&quot;&gt;
+                        &lt;h4 class=&quot;bk-mg-off&quot;&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt; LONDON&lt;/h4&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;text-center bk-pd-b-20 bk-pd-t-20&quot;&gt;
+                    &lt;i class=&quot;wi wi-rain-wind fa-5x&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;fa fa-long-arrow-right fa-2x bk-pd-l-10 bk-pd-r-10&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;wi wi-day-cloudy-gusts fa-5x&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;row bk-mg-t-15 bk-mg-b-10&quot;&gt;
+                    &lt;div class=&quot;col-xs-6&quot;&gt;
+                        Feels like: 16&deg;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-6 text-right&quot;&gt;
+                        Humidity: 62%
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-bg-info bk-fg-white bk-pd-off-b bk-pd-t-15&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-4 bk-vcenter&quot;&gt;
+                        &lt;h2 class=&quot;bk-mg-off&quot;&gt;25&deg;&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-8 bk-vcenter text-right&quot;&gt;
+                        &lt;h4 class=&quot;bk-mg-off&quot;&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt; BERLIN&lt;/h4&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;text-center bk-pd-b-20 bk-pd-t-20&quot;&gt;
+                    &lt;i class=&quot;wi wi-cloudy-windy fa-5x&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;fa fa-long-arrow-right fa-2x bk-pd-l-10 bk-pd-r-10&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;wi wi-day-sunny fa-5x&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;row bk-mg-t-15 bk-mg-b-10&quot;&gt;
+                    &lt;div class=&quot;col-xs-6&quot;&gt;
+                        Feels like: 27&deg;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-6 text-right&quot;&gt;
+                        Humidity: 41%
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+        <h2 class="bk-d-mg bk-300">Skycons</h2>
+
+        <p class="lead">
+            Is a set of 10 canvas-based icons that are in continuous motion. Only depends on JavaScript, no other libraries required.<br>
+            <a href="http://darkskyapp.github.io/skycons/">Plugin page</a>.
+        </p>
+
+        <h4>Example</h4>
+
+        <!--canvas class="partly-cloudy-day bk-pd-t-10 bk-pd-b-10" width="100" height="100"></canvas-->
+
+            <canvas class="clear-day" width="64" height="64">
+            </canvas>
+
+            <canvas class="clear-night" width="64" height="64">
+            </canvas>
+
+            <canvas class="partly-cloudy-day" width="64" height="64">
+            </canvas>
+
+            <canvas class="partly-cloudy-night" width="64" height="64">
+            </canvas>
+
+            <canvas class="cloudy" width="64" height="64">
+            </canvas>
+
+            <canvas class="rain" width="64" height="64">
+            </canvas>
+
+            <canvas class="sleet" width="64" height="64">
+            </canvas>
+
+            <canvas class="snow" width="64" height="64">
+            </canvas>
+
+            <canvas class="wind" width="64" height="64">
+            </canvas>
+
+            <canvas class="fog" width="64" height="64">
+            </canvas>
+
+        <h4>HTML</h4>
+<pre><code>&lt;canvas class=&quot;clear-day&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;clear-night&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;partly-cloudy-day&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;partly-cloudy-night&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;cloudy&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;rain&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;sleet&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;snow&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;wind&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;canvas class=&quot;fog&quot; width=&quot;64&quot; height=&quot;64&quot;&gt;
+&lt;/canvas&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm">JavaScript</h4>
+
+<pre><code>// skycons
+//http://stackoverflow.com/questions/24572100/skycons-cant-display-the-same-icon-twice
+var skycons = new Skycons({&quot;color&quot;: &quot;#fff&quot;}),
+    list  = [
+        &quot;clear-day&quot;, &quot;clear-night&quot;, &quot;partly-cloudy-day&quot;,
+        &quot;partly-cloudy-night&quot;, &quot;cloudy&quot;, &quot;rain&quot;, &quot;sleet&quot;, &quot;snow&quot;, &quot;wind&quot;,
+        &quot;fog&quot;
+    ],
+    i;
+
+for(i = list.length; i--; ) {
+    var weatherType = list[i],
+        elements = document.getElementsByClassName( weatherType );
+    for (e = elements.length; e--;){
+        skycons.set( elements[e], weatherType );
+    }
+}
+
+skycons.play();</code></pre>
+
+
+
+
+        <h2 class="bk-d-mg bk-300">Integrated weather widget with geolocation</h2>
+
+        <p class="lead">
+            The jQuery plugin <strong>simpleweatherjs</strong> takes care of grabbing the location from Yahoo!<br>
+            <a href="http://simpleweatherjs.com/">Plugin page</a>.
+        </p>
+
+        <p>
+            This widget has some custom CSS that can easily be changed according to project-specific needs. This example has a default layout which works
+            on all devices and uses HTML5 geolocation to grab local weather data.
+        </p>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-weather bk-weather-plugin bk-fg-white">
+                        <h4 class="bk-mg-off bk-opacity-8 bk-300">Weather widget</h4>
+                        <div id="weather"></div>
+                        <button class="js-geolocation btn btn-primary" style="display: none;">Use Your Location</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h4>HTML</h4>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-weather bk-weather-plugin bk-fg-white&quot;&gt;
+        &lt;h4 class=&quot;bk-mg-off bk-opacity-8 bk-300&quot;&gt;Weather widget&lt;/h4&gt;
+        &lt;div id=&quot;weather&quot;&gt;&lt;/div&gt;
+        &lt;button class=&quot;js-geolocation btn btn-primary&quot; style=&quot;display: none;&quot;&gt;Use Your Location&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h4 class="bk-d-mg-sm">jQuery</h4>
+
+        <p>
+            The <code>loadWeather</code> function is most important below, the rest can be copy-pasted into any project. This function can be changed
+            so that the layout of your weather widget changes. Make sure to also change the specific CSS or LESS code which handles absolute positioning.
+        </p>
+<pre><code>// Docs at http://simpleweatherjs.com
+
+/* Does your browser support geolocation? */
+if (&quot;geolocation&quot; in navigator) {
+    $('.js-geolocation').show();
+} else {
+    $('.js-geolocation').hide();
+}
+
+/* Where in the world are you? */
+$('.js-geolocation').on('click', function() {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        loadWeather(position.coords.latitude+','+position.coords.longitude); //load weather using your lat/lng coordinates
+    });
+});
+
+/*
+ * Test Locations
+ * Austin lat/long: 30.2676,-97.74298
+ * Austin WOEID: 2357536
+ */
+$(document).ready(function() {
+    loadWeather('Seattle',''); //@params location, woeid
+});
+
+function loadWeather(location, woeid) {
+    $.simpleWeather({
+        location: location,
+        woeid: woeid,
+        unit: 'f',
+        success: function(weather) {
+            html = '&lt;h2&gt;&lt;i class=&quot;icon-'+weather.code+'&quot;&gt;&lt;/i&gt; '+weather.temp+'&amp;deg;'+weather.units.temp+'&lt;/h2&gt;&lt;span class=&quot;bk-wth-tmp-alt bk-opacity-6&quot;&gt; or '+weather.alt.temp+'&amp;deg;C&lt;/span&gt;';
+            html += '&lt;span class=&quot;bk-wth-region&quot;&gt;'+weather.city+', '+ weather.region;
+            html += '&lt;br&gt;&lt;span class=&quot;bk-wth-cur pull-right&quot;&gt;'+weather.currently+'&lt;/span&gt;&lt;/span&gt;';
+
+            $(&quot;#weather&quot;).html(html);
+        },
+        error: function(error) {
+            $(&quot;#weather&quot;).html('&lt;p&gt;'+error+'&lt;/p&gt;');
+        }
+    });
+}</code></pre>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="vendor/simpleweather/jquery.simpleWeather.min.js"></script>
+
+
+
+<script src="vendor/skycons.js"></script>
+
+<script src="js/bootkit/weather.js"></script>
+
+
+
+</body>
+</html>

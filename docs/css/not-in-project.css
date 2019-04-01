@@ -1,0 +1,58 @@
+/* this is just some dirty CSS to make the front page work and is not needed for projects.  */
+html
+{
+    min-width: 320px;
+}
+
+.bk-docs-site-title {
+    font-size: 140px;
+    font-weight: 700;
+    position:relative;
+    margin-top: 0;
+    color: #F78852;
+}
+
+@media (max-width: 1200px) {
+    .bk-docs-site-title {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .bk-docs-site-title {
+        font-size: 70px;
+    }
+}
+
+.bk-doc-site-sub {
+    font-size: 50px;
+}
+
+.bk-docs-link-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.bk-docs-btn {
+    color: #fff !important;
+    background-color: #F78852;
+}
+.bk-docs-btn:hover {
+    background-color: #f56621;
+}
+
+footer {
+    padding: 30px;
+    background-color: #ccc;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #F78852;
+}
+
+footer a:hover {
+    color: #F78852;
+}

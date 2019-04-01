@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        BootKit - jQuery Sparklines
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">JQUERY SPARKLINES</h1>
+
+        <p class="lead bk-fg-gray">
+            This jQuery plugin makes it easy to generate a number of different types of sparklines directly in the browser.<br>
+            <a href="http://omnipotent.net/jquery.sparkline/#s-about">Visit the plugin page</a>. You can use the documentation section to get to know
+            the options that can be passed through. Each graph type will be discussed separately below.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg bk-300">Line charts</h2>
+
+        <p>
+            Line charts are the most flexible Sparklines as they can be resized with the browser and can be small or large, allowing for quick and clear data representation.
+        </p>
+
+        <h4 class="bk-d-mg-sm">Example</h4>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>With padding</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-primary bk-fg-white">
+                        <div class="row bk-mg-b-15">
+                            <div class="col-xs-8">
+                                <h2 class="bk-mg-off">195</h2>
+                                SALES TODAY
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <i class="fa fa-shopping-cart fa-2x"></i>
+                            </div>
+                        </div>
+                        <span class="sparkline-widget-white" values="9,13,10,9,15,8,9,11,20,16,14,21,15,18,17,23,25,28,8,11,12,29"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h4>Without padding</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-danger bk-fg-white bk-pd-off">
+                        <div class="row bk-pd-15">
+                            <div class="col-xs-8">
+                                <h2 class="bk-mg-off">195</h2>
+                                SALES TODAY
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <i class="fa fa-shopping-cart fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="bk-mg-b-15">
+                            <span class="sparkline-widget-white" values="9,13,10,9,15,8,9,11,20,16,14,21,15,18,17,23,25,28,8,11,12,29"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>HTML</h4>
+
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-primary bk-fg-white&quot;&gt;
+        &lt;div class=&quot;row bk-mg-b-15&quot;&gt;
+            &lt;div class=&quot;col-xs-8&quot;&gt;
+                &lt;h2 class=&quot;bk-mg-off&quot;&gt;195&lt;/h2&gt;
+                SALES TODAY
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 text-right&quot;&gt;
+                &lt;i class=&quot;fa fa-shopping-cart fa-2x&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;sparkline-widget-white&quot; values=&quot;9,13,10,9,15,8,9,11,20,16,14,21,15,18,17,23,25,28,8,11,12,29&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-danger bk-fg-white bk-pd-off&quot;&gt;
+        &lt;div class=&quot;row bk-pd-15&quot;&gt;
+            &lt;div class=&quot;col-xs-8&quot;&gt;
+                &lt;h2 class=&quot;bk-mg-off&quot;&gt;195&lt;/h2&gt;
+                SALES TODAY
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 text-right&quot;&gt;
+                &lt;i class=&quot;fa fa-shopping-cart fa-2x&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bk-mg-b-15&quot;&gt;
+            &lt;span class=&quot;sparkline-widget-white&quot; values=&quot;9,13,10,9,15,8,9,11,20,16,14,21,15,18,17,23,25,28,8,11,12,29&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h4 class="bk-d-mg-sm">jQuery</h4>
+
+        <p>
+            In <strong>js/bootkit/sparklines.js</strong> there is an example function called <code>widgetSparklineLine</code> which takes care of line charts.<br>
+            This function could serve as a starting point from where you build you own depending on your specific needs.
+        </p>
+<pre><code>var spkrlWidgetLine = function(el, color, minSpotColor, maxSpotColor, highlightLineColor, fillColor, height, spotRadius) {
+    el.sparkline('html', {
+        defaultPixelsPerValue: 5,
+        enableTagOptions: true,
+        chartRangeMin   : 0,
+        spotColor       : color,
+        minSpotColor    : minSpotColor,
+        maxSpotColor    : maxSpotColor,
+        highlightLineColor : highlightLineColor,
+        lineColor : color,
+        fillColor : fillColor,
+        width: '100%',
+        height: height,
+        highlightSpotColor: color,
+        spotRadius: spotRadius
+    });
+};</code></pre>
+
+        <p class="bk-d-mg-sm alert alert-danger">
+            <strong>Remarks:</strong><br>
+            1.) 7 custom variables can be passed through (besides the target HTML element) so that we can automate a the most important configuration options.
+            <br>
+            2.) The <code>spkrlWhiteInit</code> function takes care of passing through our settings to the executing function. The function is reused when the window is resized.
+            <br>
+            3.) We call the <code>waitForFinalEvent</code> function to make sure the Sparkline is reinitialized on window resize. This is a generic function which
+            can take care of multiple event handlers by adding a certain timeout to keep the browser from slowing down. You can pass through a custom timeout period (250ms in this case)
+            and a name for this specific "debouncer" must also be passed (sparkline-widget-white in this case).
+        </p>
+
+<pre><code>!function ($) {
+
+    $(function() {
+
+        // function to init sparkline
+        var spkrlInit = function() {
+            spkrlWidgetLine(
+                $(".sparkline-widget-white"),
+                "#fff",
+                "#fff",
+                "#fff",
+                "#fff",
+                "",
+                60,
+                0
+            );
+        };
+
+        // init at DOM loaded
+        spkrlInit();
+
+        // call debounced reinit on resize
+        $(window).resize(function() {
+            waitForFinalEvent(function() {
+
+                // init at window resize
+                spkrlInit();
+            }, 250, "sparklines");
+        });
+
+    });
+
+}(window.jQuery);</code></pre>
+
+
+
+        <h2 class="bk-d-mg bk-300">Bar charts</h2>
+
+        <p class="alert-danger alert lead">
+            Bar charts can't be adjusted automatically at window resize unlike the line charts below -
+            <a href="http://stackoverflow.com/questions/18092144/sparklines-bar-graph-fit">it's possible</a> but there's no perfect fix which is
+            why it is not included in this project.
+        </p>
+
+        <p>
+            The idea with bar charts is to use them as small, cute inline charts that can quickly beautify your website and present data in an orderly way
+            without overwhealming the visitor.
+        </p>
+
+
+        <h4 class="bk-d-mg-sm">Example</h4>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="panel bk-widget bk-bd-off bk-chrome-fix">
+                    <div class="panel-body bk-bg-white bk-fg-danger bk-fg-darken bk-pd-off">
+                        <div class="row bk-pd-10 bk-pd-off-b bk-pd-t-5">
+                            <div class="col-xs-7 text-left bk-vcenter">
+                                <div>
+                                    <h5>PAGE VIEWS<br><strong>1,622,367</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 bk-vcenter text-right">
+                                <div class="bar-sparkline" sparktype="bar" sparkbarcolor="#F78852" sparkheight="30" sparkbarwidth="4" sparkbarspacing="3">
+                                    <!-- 28,15,40,12,13,20,17,29,10,6,11,12 -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="bk-hr-danger bk-mg-off bk-opacity-5">
+
+                        <div class="bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml">
+                            <a href="javascript:" class="bk-fg-danger bk-fg-darken">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="panel bk-widget bk-bd-off bk-chrome-fix">
+                    <div class="panel-body bk-bg-white bk-fg-info bk-fg-darken bk-pd-off">
+                        <div class="row bk-pd-10 bk-pd-off-b bk-pd-t-5">
+                            <div class="col-xs-7 text-left bk-vcenter">
+                                <div>
+                                    <h5>SHARED LINKS<br><strong>5,263</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 bk-vcenter text-right">
+                                <div class="bar-sparkline" sparktype="bar" sparkbarcolor="#57D9CA" sparkheight="30" sparkbarwidth="4" sparkbarspacing="3">
+                                    <!-- 7,2,4,11,1,8,11,15,4,6,5,2 -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="bk-hr-info bk-mg-off bk-opacity-5">
+
+                        <div class="bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml">
+                            <a href="javascript:" class="bk-fg-info bk-fg-darken">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="panel bk-widget bk-bd-off bk-chrome-fix">
+                    <div class="panel-body bk-bg-white bk-fg-warning bk-fg-darken bk-pd-off">
+                        <div class="row bk-pd-10 bk-pd-off-b bk-pd-t-5">
+                            <div class="col-xs-7 text-left bk-vcenter">
+                                <div>
+                                    <h5>DONATIONS<br><strong>4,566,810</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 bk-vcenter text-right">
+                                <div class="bar-sparkline" sparktype="bar" sparkbarcolor="#F8C556" sparkheight="30" sparkbarwidth="4" sparkbarspacing="3">
+                                    <!-- 7,2,4,11,1,8,11,4,8,6,9,9 -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="bk-hr-warning bk-mg-off bk-opacity-5">
+
+                        <div class="bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml">
+                            <a href="javascript:" class="bk-fg-warning bk-fg-darken">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="panel bk-widget bk-bd-off bk-chrome-fix">
+                    <div class="panel-body bk-bg-white bk-fg-primary bk-fg-darken bk-pd-off">
+                        <div class="row bk-pd-10 bk-pd-off-b bk-pd-t-5">
+                            <div class="col-xs-7 text-left bk-vcenter">
+                                <div>
+                                    <h5>NEW CLIENTS<br><strong>455</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 bk-vcenter text-right">
+                                <div class="bar-sparkline" sparktype="bar" sparkbarcolor="#5EABF4" sparkheight="30" sparkbarwidth="4" sparkbarspacing="3">
+                                    <!-- 7,2,0,4,9,4,6,2,8,11,2,5 -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="bk-hr-primary bk-mg-off bk-opacity-5">
+
+                        <div class="bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml">
+                            <a href="javascript:" class="bk-fg-primary bk-fg-darken">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h4>HTML</h4>
+        <p>
+            This is an example for the white-red widget above on the left; the others have very similar HTML.
+            A different technique for passing data is used here: in stead of passing it through and attribute called "values" we include the values inside the
+            element designated as a Sparkline.
+        </p>
+
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off bk-chrome-fix&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-white bk-fg-danger bk-fg-darken bk-pd-off&quot;&gt;
+        &lt;div class=&quot;row bk-pd-10 bk-pd-off-b bk-pd-t-5&quot;&gt;
+            &lt;div class=&quot;col-xs-7 text-left bk-vcenter&quot;&gt;
+                &lt;div&gt;
+                    &lt;h5&gt;PAGE VIEWS&lt;br&gt;&lt;strong&gt;1,622,367&lt;/strong&gt;&lt;/h5&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-5 bk-vcenter text-right&quot;&gt;
+                &lt;div class=&quot;bar-sparkline&quot; sparktype=&quot;bar&quot; sparkbarcolor=&quot;#F78852&quot; sparkheight=&quot;30&quot; sparkbarwidth=&quot;4&quot; sparkbarspacing=&quot;3&quot;&gt;
+                    &lt;!-- 28,15,40,12,13,20,17,29,10,6,11,12 --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;hr class=&quot;bk-hr-danger bk-mg-off bk-opacity-5&quot;&gt;
+
+        &lt;div class=&quot;bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml&quot;&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;bk-fg-danger bk-fg-darken&quot;&gt;VIEW DETAILS&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm">jQuery</h4>
+
+<pre><code>$('.bar-sparkline').sparkline('html', {
+    enableTagOptions: true,
+    chartRangeMin   : 0
+});</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Pie charts</h2>
+
+        <h4 class="bk-d-mg-sm">Example</h4>
+
+        <p>
+            These are great for simple but effective data representation in pie form. We can pass through an array of colors in jQuery.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off bk-chrome-fix">
+                    <div class="panel-body bk-bg-white bk-fg-primary bk-fg-darken bk-pd-off">
+                        <div class="row bk-pd-10 bk-pd-off-b bk-pd-t-5">
+                            <div class="col-xs-7 text-left bk-vcenter">
+                                <div>
+                                    <h5>PAGE VIEWS<br><strong>1,622,367</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 bk-vcenter text-right bk-pd-t-10 bk-pd-b-10">
+                                <span class="sparkpie">20,47,33</span>
+                            </div>
+                        </div>
+
+                        <hr class="bk-hr-primary bk-mg-off bk-opacity-5">
+
+                        <div class="bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml">
+                            <a href="javascript:" class="bk-fg-primary bk-fg-darken">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>HTML</h4>
+
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off bk-chrome-fix&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-white bk-fg-primary bk-fg-darken bk-pd-off&quot;&gt;
+        &lt;div class=&quot;row bk-pd-10 bk-pd-off-b bk-pd-t-5&quot;&gt;
+            &lt;div class=&quot;col-xs-7 text-left bk-vcenter&quot;&gt;
+                &lt;div&gt;
+                    &lt;h5&gt;PAGE VIEWS&lt;br&gt;&lt;strong&gt;1,622,367&lt;/strong&gt;&lt;/h5&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-5 bk-vcenter text-right bk-pd-t-10 bk-pd-b-10&quot;&gt;
+                &lt;span class=&quot;sparkpie&quot;&gt;20,47,33&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;hr class=&quot;bk-hr-primary bk-mg-off bk-opacity-5&quot;&gt;
+
+        &lt;div class=&quot;bk-pd-l-10 bk-pd-r-10 bk-pd-t-5 bk-pd-b-5 bk-sml&quot;&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;bk-fg-primary bk-fg-darken&quot;&gt;VIEW DETAILS&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm">jQuery</h4>
+
+<pre><code>$('.sparkpie').sparkline('html', {
+    type: 'pie',
+    height: '50px',
+    sliceColors: ['#5EABF4', '#3E9BF2', '#98CAF8']
+});</code></pre>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="docs/js/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="vendor/sparklines/jquery.sparkline.min.js"></script>
+
+    <script src="js/bootkit/functions.js"></script>
+    <script src="js/bootkit/sparklines.js"></script>
+
+</body>
+</html>

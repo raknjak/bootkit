@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        Bootkit - avatars
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">AVATARS</h1>
+
+        <p class="lead bk-fg-gray">
+            Avatars are user images that can be styled in various ways. they can also be used in various complex setups.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg bk-300">Available classes</h2>
+
+        <ul class="list-unstyled">
+            <li><code>bk-avatar</code>: declares an image container to be an avatar</li>
+            <li><code>bk-img-40</code>: width and height of avatar is set to 40 pixels</li>
+            <li><code>bk-img-60</code>: width and height of avatar is set to 60 pixels</li>
+            <li><code>bk-img-80</code>: width and height of avatar is set to 80 pixels</li>
+            <li><code>bk-img-100</code>: width and height of avatar is set to 100 pixels</li>
+            <li><code>bk-img-120</code>: width and height of avatar is set to 120 pixels</li>
+        </ul>
+
+        <ul class="list-unstyled">
+            <li><code>bk-avatar40-hcenter</code>: horizontal and vertical centering for 40 pixel avatars</li>
+            <li><code>bk-avatar60-hcenter</code>: horizontal and vertical centering for 60 pixel avatars</li>
+            <li><code>bk-avatar80-hcenter</code>: horizontal and vertical centering for 80 pixel avatars</li>
+            <li><code>bk-avatar100-hcenter</code>: horizontal and vertical centering for 100 pixel avatars</li>
+            <li><code>bk-avatar120-hcenter</code>: horizontal and vertical centering for 120 pixel avatars</li>
+        </ul>
+
+        <ul class="list-unstyled">
+            <li><code>bk-avatar80-halfdown</code>: half down positioning for 80 pixel avatars in relation to backgrounds (see examples below for better clarity)</li>
+            <li><code>bk-avatar100-halfdown</code>: half down setting for 100 pixel avatars in relation to backgrounds (see examples below for better clarity)</li>
+            <li><code>bk-avatar120-halfdown</code>: half down positioning for 120 pixel avatars in relation to backgrounds (see examples below for better clarity)</li>
+            <li><code>bk-avatar80-halfdown-after</code>: give halfdown 80 pixel avatar panels the needed top padding to make them horizontally align correctly</li>
+            <li><code>bk-avatar100-halfdown-after</code>: give halfdown 100 pixel avatar panels the needed top padding to make them horizontally align correctly</li>
+            <li><code>bk-avatar120-halfdown-after</code>: give halfdown 120 pixel avatar panels the needed top padding to make them horizontally align correctly</li>
+        </ul>
+
+        <h4 class="bk-d-mg">Example</h4>
+
+        <p>
+            The wrapping element (div) must have the <code>bk-avatar</code> class and the image itself receives specific configuration classes like <code>img-circle</code>
+            and <code>bk-img-80</code>.
+        </p>
+
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-img-80">
+        </div>
+<pre class="bk-mg-t-10"><code>&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-80&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Sizing</h2>
+
+        <h4><code>bk-img-40</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-img-40">
+        </div>
+
+        <h4><code>bk-img-60</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-img-60">
+        </div>
+
+        <h4><code>bk-img-80</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-img-80">
+        </div>
+
+        <h4><code>bk-img-100</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-img-100">
+        </div>
+
+        <h4><code>bk-img-120</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-img-120">
+        </div>
+<pre class="bk-mg-t-10"><code>&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-40&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-60&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-100&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-120&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+        <h2 class="bk-d-mg bk-300">Borders</h2>
+
+        <h4>1 pixel (no extra class needed)</h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-img-80">
+        </div>
+
+        <h4>2 pixels <code>bk-bd-2x</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-bd-2x bk-img-80">
+        </div>
+
+        <h4>3 pixels <code>bk-bd-3x</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-bd-3x bk-img-80">
+        </div>
+
+        <h4>4 pixels <code>bk-bd-4x</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-bd-4x bk-img-80">
+        </div>
+
+        <h4>5 pixels <code>bk-bd-5x</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-bd-5x bk-img-80">
+        </div>
+
+        <h4>1x double border with 4px spacing <code>bk-bd-db-danger</code></h4>
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-db-danger bk-bg-white bk-img-80">
+        </div>
+
+        <h4>3x double border with 4px spacing <code>bk-bd-db-danger</code></h4>
+
+        <div class="bk-avatar">
+            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-db-danger bk-bd-3x bk-bg-white bk-img-80">
+        </div>
+
+        <p class="alert alert-info bk-mg-t-10">
+            More color and thickness combos are possible!
+        </p>
+
+<pre class="bk-mg-t-10"><code>&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-bd-2x bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-bd-3x bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-bd-4x bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-bd-5x bk-img-80&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h4 class="bk-d-mg">Bordered avatars with links</h4>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>Darken</h4>
+                <a href="javascript:" class="bk-avatar">
+                    <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-bd-5x bk-bd-darken bk-img-80">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <h4>Lighten</h4>
+                <a href="javascript:" class="bk-avatar">
+                    <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-bd-danger bk-bd-5x bk-bd-lighten bk-img-80">
+                </a>
+            </div>
+        </div>
+<pre class="bk-mg-t-10"><code>&lt;a href=&quot;javascript:&quot; class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-bd-5x bk-bd-darken bk-img-80&quot;&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;javascript:&quot; class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-bd-danger bk-bd-5x bk-bd-lighten bk-img-80&quot;&gt;
+&lt;/a&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Applying box shadows</h2>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-warning text-center">
+
+                        <p>
+                            <code>bk-box-shadow</code>
+                        </p>
+                        <div class="bk-avatar bk-mg-b-10">
+                            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-box-shadow bk-img-80">
+                        </div>
+
+                        <p>
+                            <code>bk-box-shadow-l</code>
+                        </p>
+                        <div class="bk-avatar bk-mg-b-10">
+                            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-box-shadow-l bk-img-80">
+                        </div>
+
+                        <p>
+                            <code>bk-box-shadow-t</code>
+                        </p>
+                        <div class="bk-avatar bk-mg-b-10">
+                            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-box-shadow-t bk-img-80">
+                        </div>
+
+                        <p>
+                            <code>bk-box-shadow-r</code>
+                        </p>
+                        <div class="bk-avatar bk-mg-b-10">
+                            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-box-shadow-r bk-img-80">
+                        </div>
+
+                        <p>
+                            <code>bk-box-shadow-b</code>
+                        </p>
+                        <div class="bk-avatar">
+                            <img src="img/face/srinivas-128.jpg" alt="" class="img-circle bk-box-shadow-b bk-img-80">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<pre><code>&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-box-shadow bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-box-shadow-l bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-box-shadow-t bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-box-shadow-r bk-img-80&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bk-avatar&quot;&gt;
+    &lt;img src=&quot;img/face/srinivas-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-box-shadow-b bk-img-80&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <p>
+            By combining hover effects with box shadows <code>bk-box-shadow</code> we can achieve some special effects:
+        </p>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <a class="panel-body bk-bg-success bk-bg-lighten text-center">
+                        <div class="bk-avatar">
+                            <img src="img/face/ghaida-128.jpg" alt="" class="img-circle bk-img-120 bk-bd-success bk-bd-darken bk-bd-3x bk-box-shadow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <a class="panel-body bk-bg-success bk-bg-darken text-center">
+                        <div class="bk-avatar">
+                            <img src="img/face/ghaida-128.jpg" alt="" class="img-circle bk-img-120 bk-bd-success bk-bd-lighten bk-bd-3x bk-box-shadow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <a class="panel-body bk-bg-success bk-bg-darken text-center">
+                        <div class="bk-avatar">
+                            <img src="img/face/ghaida-128.jpg" alt="" class="img-circle bk-img-120 bk-bd-success bk-bd-3x bk-box-shadow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <a class="panel-body bk-bg-success bk-bg-lighten text-center">
+                        <div class="bk-avatar">
+                            <img src="img/face/ghaida-128.jpg" alt="" class="img-circle bk-img-120 bk-bd-success bk-bd-3x bk-box-shadow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a class=&quot;panel-body bk-bg-success bk-bg-lighten text-center&quot;&gt;
+        &lt;div class=&quot;bk-avatar&quot;&gt;
+            &lt;img src=&quot;img/face/ghaida-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-120 bk-bd-success bk-bd-darken bk-bd-3x bk-box-shadow&quot;&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a class=&quot;panel-body bk-bg-success bk-bg-darken text-center&quot;&gt;
+        &lt;div class=&quot;bk-avatar&quot;&gt;
+            &lt;img src=&quot;img/face/ghaida-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-120 bk-bd-success bk-bd-lighten bk-bd-3x bk-box-shadow&quot;&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a class=&quot;panel-body bk-bg-success bk-bg-darken text-center&quot;&gt;
+        &lt;div class=&quot;bk-avatar&quot;&gt;
+            &lt;img src=&quot;img/face/ghaida-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-120 bk-bd-success bk-bd-3x bk-box-shadow&quot;&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a class=&quot;panel-body bk-bg-success bk-bg-lighten text-center&quot;&gt;
+        &lt;div class=&quot;bk-avatar&quot;&gt;
+            &lt;img src=&quot;img/face/ghaida-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-120 bk-bd-success bk-bd-3x bk-box-shadow&quot;&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+        <h2 class="bk-d-mg bk-300">Centered inside panel</h2>
+
+        <p>
+            By applying the class <code>bk-avatar100-hcenter</code> we can align our avatar horizontally inside a widget. Note that <strong>this class is added
+            to the wrapper element</strong>, not the image itself.
+        </p>
+
+        <p class="alert-danger alert lead">
+            <code>&lt;div class=&quot;bk-vcenter&quot;&gt;&lt;/div&gt;</code> is used <strong>inside the wrapping element before the image itself</strong> to provide a way to vertically
+            center the element.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <a href="javascript:" class="panel-body text-center bk-pd-off bk-opacity-inv bk-wrapper">
+                        <div class="bk-avatar bk-avatar100-hcenter">
+                            <div class="bk-vcenter"></div>
+                            <img src="img/face/chelsea-128.jpg" alt="" class="img-circle bk-img-100 bk-bd-danger bk-bd-darken bk-bd-4x">
+                        </div>
+                        <div class="bk-img-radius"><img src="img/desk.jpg" class="img-responsive"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a href=&quot;javascript:&quot; class=&quot;panel-body text-center bk-pd-off bk-opacity-inv bk-wrapper&quot;&gt;
+        &lt;div class=&quot;bk-avatar bk-avatar100-hcenter&quot;&gt;
+            &lt;div class=&quot;bk-vcenter&quot;&gt;&lt;/div&gt;
+            &lt;img src=&quot;img/face/chelsea-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-100 bk-bd-danger bk-bd-darken bk-bd-4x&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bk-img-radius&quot;&gt;&lt;img src=&quot;img/desk.jpg&quot; class=&quot;img-responsive&quot;&gt;&lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+        <h2 class="bk-d-mg bk-300">Halfdown avatars</h2>
+
+        <p>
+            This is the name for avatars that hang in between a background image and a second panel body.<br>
+        </p>
+
+        <p class="lead alert-danger alert">
+            <i class="fa fa-warning bk-mg-r-5"></i> First of all, add <code>bk-wrapper</code> to the panel body that will contain the avatar to make sure
+            absolute positioning is related to the correct parent: this class adds <code>position: relative</code> to the panel body in question.
+            <br>
+            <i class="fa fa-warning bk-mg-r-5"></i> Halfdown configs are only available for 80x80, 100x100 and 120x120 pixel avatars.
+            <br>
+            The top image size has no influence on the position of the avatar: it will always remain exactly on the border of the 2 panel bodies.
+        </p>
+
+        <p>
+            - The example below describes a config where a 120x120 avatar is used.<br>
+            - We always use 2 panel bodies: one will contain the top image and the avatar whilst the second one will be pushed down a bit and will hold text data.<br>
+            - <code>bk-avatar120-halfdown</code> is added to the wrapping element (where bk-avatar is added). As in this case the avatar has 120 pixel width and height dimensions.
+            <br>
+            - The avatar has a link with unique border styling and hover effect (could come in handy to visit the user profile for example).<br>
+            - <code>bk-avatar120-halfdown-after</code> must be added to the second panel-body to push down content within.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body text-center bk-pd-off bk-wrapper">
+                        <img src="img/flat-landscape.jpg" class="img-responsive bk-rd-t">
+                        <div class="bk-avatar bk-avatar120-halfdown">
+                            <div class="bk-vcenter"></div>
+                            <a href="javascript:" class="bk-fg-danger bk-fg-darken">
+                                <img src="img/face/chris-128.jpg" alt="" class="img-circle bk-img-120 bk-bd-white bk-bd-darken bk-bd-3x">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="panel-body bk-pd-b-10 bk-avatar120-halfdown-after text-center bk-bg-white">
+                        <h3 class="bk-mg-off"><strong>Chris Pearson</strong></h3>
+                        <small>SUPPORT ANALYST</small>
+                        <p class="bk-mg-off-b">
+                            Curabitur nisi ipsum, accumsan id urna facilisis, commodo tempus turpis. Mauris lobortis elit eget bibendum
+                            ultrices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body text-center bk-pd-off bk-wrapper">
+                        <img src="img/oriental-night.jpg" class="img-responsive bk-rd-t">
+                        <div class="bk-avatar bk-avatar80-halfdown">
+                            <div class="bk-vcenter"></div>
+                            <a href="javascript:" class="bk-fg-danger bk-fg-darken">
+                                <img src="img/face/chelsea-128.jpg" alt="" class="img-circle bk-img-80 bk-bd-white bk-bd-darken bk-bd-3x">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="panel-body bk-pd-b-10 bk-avatar80-halfdown-after text-center bk-bg-white">
+                        <h3 class="bk-mg-off"><strong>Chelsea Otakan</strong></h3>
+                        <small>HR MANAGER</small>
+                        <p class="bk-mg-off-b">
+                            Curabitur nisi ipsum, accumsan id urna facilisis, commodo tempus turpis. Mauris lobortis elit eget bibendum
+                            ultrices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body text-center bk-pd-off bk-wrapper&quot;&gt;
+        &lt;img src=&quot;img/flat-landscape.jpg&quot; class=&quot;img-responsive bk-rd-t&quot;&gt;
+        &lt;div class=&quot;bk-avatar bk-avatar120-halfdown&quot;&gt;
+            &lt;div class=&quot;bk-vcenter&quot;&gt;&lt;/div&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;bk-fg-danger bk-fg-darken&quot;&gt;
+                &lt;img src=&quot;img/face/chris-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-120 bk-bd-white bk-bd-darken bk-bd-3x&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-body bk-pd-b-10 bk-avatar120-halfdown-after text-center bk-bg-white&quot;&gt;
+        &lt;h3 class=&quot;bk-mg-off&quot;&gt;&lt;strong&gt;Chris Pearson&lt;/strong&gt;&lt;/h3&gt;
+        &lt;small&gt;SUPPORT ANALYST&lt;/small&gt;
+        &lt;p class=&quot;bk-mg-off-b&quot;&gt;
+            Curabitur nisi ipsum, accumsan id urna facilisis, commodo tempus turpis. Mauris lobortis elit eget bibendum
+            ultrices.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body text-center bk-pd-off bk-wrapper&quot;&gt;
+        &lt;img src=&quot;img/oriental-night.jpg&quot; class=&quot;img-responsive bk-rd-t&quot;&gt;
+        &lt;div class=&quot;bk-avatar bk-avatar80-halfdown&quot;&gt;
+            &lt;div class=&quot;bk-vcenter&quot;&gt;&lt;/div&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;bk-fg-danger bk-fg-darken&quot;&gt;
+                &lt;img src=&quot;img/face/chelsea-128.jpg&quot; alt=&quot;&quot; class=&quot;img-circle bk-img-80 bk-bd-white bk-bd-darken bk-bd-3x&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-body bk-pd-b-10 bk-avatar80-halfdown-after text-center bk-bg-white&quot;&gt;
+        &lt;h3 class=&quot;bk-mg-off&quot;&gt;&lt;strong&gt;Chelsea Otakan&lt;/strong&gt;&lt;/h3&gt;
+        &lt;small&gt;HR MANAGER&lt;/small&gt;
+        &lt;p class=&quot;bk-mg-off-b&quot;&gt;
+            Curabitur nisi ipsum, accumsan id urna facilisis, commodo tempus turpis. Mauris lobortis elit eget bibendum
+            ultrices.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

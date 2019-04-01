@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        BootKit - alignment
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">ALIGNMENT</h1>
+
+        <p class="lead bk-fg-gray">
+            Vertical alignment and centering on panel-body or row/column structures and individual cells.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg">A. USING INLINE-BLOCK</h2>
+
+        <p class="lead">
+            *When supporting IE8 is a necessity*
+        </p>
+
+
+        <h2 class="bk-d-mg-sm bk-300">Available classes</h2>
+
+        <ul class="list-unstyled">
+            <li><code>bk-ltr</code>: is applied to the panel-body to declare it as a left-to-right section. It removes the default margins from <code>row</code>.</li>
+            <li><code>bk-vcenter</code>: is applied to all cells when vertical alignment is needed.</li>
+            <li><code>bk-bottom</code>: is used to vertically align content to the bottom - must be used together with <code>bk-vcenter</code>.</li>
+            <li><code>bk-col-100pct</code>: adds 100% height to cells (used when row receives fixed height - see below).</li>
+        </ul>
+
+
+        <h4 class="bk-d-mg">Basic examples</h4>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Super simple with only one background color</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-ltr text-center bk-fg-white">
+                        <div class="row bk-bg-danger">
+                            <div class="col-xs-4 bk-vcenter bk-pd-15">
+                                col-xs-4<br>
+                                col-xs-4
+                            </div>
+                            <div class="col-xs-4 bk-vcenter bk-pd-15">
+                                col-xs-4
+                            </div>
+                            <div class="col-xs-4 bk-vcenter bk-pd-15">
+                                col-xs-4<br>
+                                col-xs-4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-ltr text-center bk-fg-white&quot;&gt;
+        &lt;div class=&quot;row bk-bg-danger&quot;&gt;
+            &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15&quot;&gt;
+                col-xs-4&lt;br&gt;
+                col-xs-4
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15&quot;&gt;
+                col-xs-4
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15&quot;&gt;
+                col-xs-4&lt;br&gt;
+                col-xs-4
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <p>
+            We add the class <code>bk-pd-15</code> to the cells so that they always have some spacing around their content. If you need less or more padding
+            several additional padding classes are available like for example <code>bk-pd-10</code> or <code>bk-pd-40</code>.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>No link</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-ltr text-center">
+                        <div class="row bk-bg-info">
+                            <div class="col-xs-6 bk-vcenter bk-pd-15 bk-bg-primary">
+                                col-xs-6<br>
+                                col-xs-6
+                            </div>
+                            <div class="col-xs-6 bk-vcenter bk-pd-15">
+                                col-xs-6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h4>One link (works on maximum 2 cells)</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <a href="javascript:" class="panel-body bk-ltr text-center bk-fg-white bk-bg-info bk-bg-darken">
+                        <div class="row">
+                            <div class="col-xs-6 bk-vcenter bk-pd-15 bk-bg-primary bk-bg-darken">
+                                col-xs-6<br>
+                                col-xs-6
+                            </div>
+                            <div class="col-xs-6 bk-vcenter">
+                                col-xs-6
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-ltr text-center&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6 bk-vcenter bk-pd-15 bk-bg-primary&quot;&gt;
+                col-xs-6&lt;br&gt;
+                col-xs-6
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-6 bk-vcenter bk-pd-15&quot;&gt;
+                col-xs-6
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a href=&quot;javascript:&quot; class=&quot;panel-body bk-ltr text-center bk-fg-white bk-bg-info bk-bg-darken&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6 bk-vcenter bk-pd-15 bk-bg-primary bk-bg-darken&quot;&gt;
+                col-xs-6&lt;br&gt;
+                col-xs-6
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-6 bk-vcenter&quot;&gt;
+                col-xs-6
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Complex structures</h2>
+
+        <h4>Example A: equal height content</h4>
+
+        <p>
+            With equal height content in cells there is no height issue:
+        </p>
+
+        <div class="panel bk-widget bk-bd-off">
+            <div class="panel-body bk-ltr text-center">
+                <div class="row">
+                    <div class="col-xs-4 bk-pd-15 bk-bg-primary">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-pd-15 bk-bg-info">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-pd-15 bk-bg-danger">
+                        col-xs-4
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h4>Example B: non-equal height content</h4>
+
+        <p>
+            With non-equal height inside cells we have an issue:
+        </p>
+
+        <div class="panel bk-widget bk-bd-off">
+            <div class="panel-body bk-ltr text-center">
+                <div class="row">
+                    <div class="col-xs-4 bk-pd-15 bk-bg-primary">
+                        col-xs-4<br>
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-pd-15 bk-bg-info">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-pd-15 bk-bg-danger">
+                        col-xs-4
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Solution: defining height</h4>
+
+        <p class="lead bk-mg-off">
+            This is the simpelest solution without having to rely on hacks or table structures (more on that below).<br>
+        </p>
+
+        <p>
+            Adding a height in pixels to the parent row and height: 100% to its children will solve the issue.<br>
+            We can't use <code>bk-vcenter</code> on the cells anymore as we override parent height (row).<br>
+            We can however use them as an inner code like <code>&lt;div class=&quot;bk-vcenter&quot;&gt;&lt;/div&gt;</code>.<br>
+            We can also do <code>&lt;div class=&quot;bk-vcenter bk-bottom&quot;&gt;&lt;/div&gt;</code> to set the content of the cell to bottom.
+        </p>
+
+        <div class="panel bk-widget bk-bd-off">
+            <div class="panel-body bk-ltr text-center">
+                <div class="row" style="height: 100px;">
+                    <a href="javascript:" class="col-xs-4 bk-pd-15 bk-bg-primary bk-bg-darken bk-fg-white bk-col-100pct">
+                        col-xs-4<br>
+                        col-xs-4
+                    </a>
+                    <a href="javascript:" class="col-xs-4 bk-pd-15 bk-bg-info bk-bg-darken bk-fg-white bk-col-100pct">
+                        <div class="bk-vcenter"></div>
+                        col-xs-4
+                    </a>
+                    <a href="javascript:" class="col-xs-4 bk-pd-15 bk-bg-danger bk-bg-darken bk-fg-white bk-col-100pct">
+                        <div class="bk-vcenter bk-bottom"></div>
+                        col-xs-4
+                    </a>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-ltr text-center&quot;&gt;
+        &lt;div class=&quot;row&quot; style=&quot;height: 100px;&quot;&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-4 bk-pd-15 bk-bg-primary bk-bg-darken bk-fg-white bk-col-100pct&quot;&gt;
+                col-xs-4&lt;br&gt;
+                col-xs-4
+            &lt;/a&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-4 bk-pd-15 bk-bg-info bk-bg-darken bk-fg-white bk-col-100pct&quot;&gt;
+                &lt;div class=&quot;bk-vcenter&quot;&gt;&lt;/div&gt;
+                col-xs-4
+            &lt;/a&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-4 bk-pd-15 bk-bg-danger bk-bg-darken bk-fg-white bk-col-100pct&quot;&gt;
+                &lt;div class=&quot;bk-vcenter bk-bottom&quot;&gt;&lt;/div&gt;
+                col-xs-4
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+
+
+
+
+        <h2 class="bk-d-mg">B. USING TABLES</h2>
+
+        <h2 class="bk-d-mg-sm bk-300">Available classes</h2>
+
+        <ul class="list-unstyled">
+            <li><code>bk-ltr</code>: is applied to the panel-body to declare it as a left-to-right section.</li>
+            <li><code>bk-tbl</code>: MUST be added to the element with the row class and will receive <code>display: table;</code>. All immediate children with a class that starts with col- will
+            receive <code>display: table-cell;</code></li>
+            <li><code>bk-list-vcenter</code>: for Bootstrap list constructions we use this class.</li>
+            <li><code>bk-pd-t-5</code>: add some mini top padding to the icons to make them look perfectly in the middle <strong><em>when needed</em></strong>.</li>
+        </ul>
+
+
+        <h4 class="bk-d-mg-sm">Examples</h4>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-8 bk-bg-white">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                            <div class="col-xs-4 bk-bg-primary bk-fg-white bk-rd-r">
+                                <em class="fa fa-globe fa-2x bk-pd-t-5"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-8 bk-bg-white">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                            <div class="col-xs-4 bk-bg-info bk-rd-r">
+                                <em class="fa fa-rocket fa-2x bk-fg-white bk-pd-t-5"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-8 bk-bg-white">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                            <div class="col-xs-4 bk-bg-warning bk-rd-r">
+                                <em class="fa fa-pencil fa-2x bk-fg-white bk-pd-t-5"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-8 bk-bg-white">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                            <div class="col-xs-4 bk-bg-danger bk-fg-white bk-rd-r bk-pd-t-5">
+                                <em class="fa fa-tasks fa-2x"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-4 bk-bg-success">
+                                <em class="fa fa-tasks fa-2x bk-fg-white bk-pd-t-5"></em>
+                            </div>
+                            <div class="col-xs-8 bk-bg-white bk-rd-r">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-4 bk-bg-gray">
+                                <em class="fa fa-tachometer fa-2x bk-fg-white bk-pd-t-5"></em>
+                            </div>
+                            <div class="col-xs-8 bk-bg-white bk-rd-r">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-4 bk-bg-inverse">
+                                <em class="fa fa-gears fa-2x bk-fg-white bk-pd-t-5"></em>
+                            </div>
+                            <div class="col-xs-8 bk-bg-white bk-rd-r">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-3&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-primary bk-fg-white bk-rd-r&quot;&gt;
+                        &lt;em class=&quot;fa fa-globe fa-2x bk-pd-t-5&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-3&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-info&quot;&gt;
+                        &lt;em class=&quot;fa fa-rocket fa-2x bk-fg-white bk-rd-r bk-pd-t-5&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-3&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-warning&quot;&gt;
+                        &lt;em class=&quot;fa fa-pencil fa-2x bk-fg-white bk-rd-r bk-pd-t-5&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-3&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-danger bk-fg-white bk-rd-r bk-pd-t-5&quot;&gt;
+                        &lt;em class=&quot;fa fa-tasks fa-2x&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-success&quot;&gt;
+                        &lt;em class=&quot;fa fa-tasks fa-2x bk-fg-white bk-pd-t-5&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white bk-rd-r&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-gray&quot;&gt;
+                        &lt;em class=&quot;fa fa-tachometer fa-2x bk-fg-white bk-pd-t-5&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white bk-rd-r&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+            &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+                &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+                    &lt;div class=&quot;col-xs-4 bk-bg-inverse&quot;&gt;
+                        &lt;em class=&quot;fa fa-gears fa-2x bk-fg-white bk-pd-t-5&quot;&gt;&lt;/em&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-8 bk-bg-white bk-rd-r&quot;&gt;
+                        &lt;div class=&quot;bk-pd-15&quot;&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8&lt;br&gt;
+                            col-xs-8
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <div class="alert alert-danger lead">
+            <p>
+                <strong>ISSUES! (fix explanation below)</strong>
+            </p>
+
+            <p class="bk-d-mg-sm">
+                <strong>Bug overview</strong><br>
+                In Chromium there's a problem with the table with: 100% not respecting the width of the parent.<br>
+                <a href="https://github.com/twbs/bootstrap/issues/11000#issuecomment-26221844">Bootstrap bug report page</a>.<br>
+                <a href="https://code.google.com/p/chromium/issues/detail?id=306878">Chromium bug report page</a>.<br>
+                The bug is also listed in the <a href="http://getbootstrap.com/browser-bugs/">Bootstrap wall of browser bugs</a>.
+            </p>
+
+            <p class="bk-d-mg-sm">
+                <strong>Is there a fix?</strong><br>
+                First of all there's a <em>hack</em> to add subpixel width e.g. <code>width: 100.6%</code> or <code>width: 100.9%</code> but I am reluctant to add it for the following reasons:<br>
+                - it doesn't really fix it, it just makes it look a bit better;<br>
+                - it influences other browsers;<br>
+                - it's a hack
+            </p>
+
+            <p class="bk-d-mg-sm">
+                <strong>YES, THERE IS A FIX!</strong><br>
+                We make sure that there is no background color defined on our widget (turned off by default on panel) and when needed we add
+                border radius manually with <code>bk-rd-*</code>. There are several possibilities, usually I just add <code>bk-rd-r</code> to the last cell.
+                This makes it look almost perfect in Chromium and the other browsers are not affected by it.<br>
+                <strong>Remaining issue</strong> is that the panel box shadow will show a small gap between the last cell and the panel edge. There's not much that can be done here.
+                In some cases this can be fixed by adding the corresponding background color to the panel body (see example below).
+            </p>
+
+            <p class="bk-d-mg-sm">
+                <strong>Examples of the original bug in Chrome can be found below.</strong>
+            </p>
+
+        </div>
+
+        <h4>Using background color on panel body (matching the right cell) to fix spacing issue:</h4>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off" style="box-shadow: 1px 1px 3px #000">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-8 bk-bg-white">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                            <div class="col-xs-4 bk-bg-primary bk-fg-white bk-rd-r">
+                                <em class="fa fa-globe fa-2x bk-pd-t-5"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off" style="box-shadow: 1px 1px 3px #000">
+                    <div class="panel-body bk-bg-primary bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-8 bk-bg-white">
+                                <div class="bk-pd-15">
+                                    col-xs-8<br>
+                                    col-xs-8
+                                </div>
+                            </div>
+                            <div class="col-xs-4 bk-bg-primary bk-fg-white bk-rd-r">
+                                <em class="fa fa-globe fa-2x bk-pd-t-5"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot; style=&quot;box-shadow: 1px 1px 3px #000&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-primary bk-pd-off&quot;&gt;
+        &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+            &lt;div class=&quot;col-xs-8 bk-bg-white&quot;&gt;
+                &lt;div class=&quot;bk-pd-15&quot;&gt;
+                    col-xs-8&lt;br&gt;
+                    col-xs-8
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 bk-bg-primary bk-fg-white bk-rd-r&quot;&gt;
+                &lt;em class=&quot;fa fa-globe fa-2x bk-pd-t-5&quot;&gt;&lt;/em&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h4 class="bk-d-mg-sm">Example images of bugs</h4>
+
+        <p>
+            <img src="img/display-table-chromium.png" class="img-responsive">
+
+            <img src="img/display-table-chromium-dense.png" class="img-responsive">
+
+            <br>
+            Black arrows mark gaps where the browser is unable to handle the width correctly.
+        </p>
+
+
+        <h2 class="bk-d-mg bk-300">Complex structures</h2>
+
+        <p>
+            By using the table layout we do not encounter the vertical alignment issues and limitations found when using inline-block (see top of page).<br>
+            The radius trick explained above is used to fix rounded corners in Chromium. Lots of extra markup for one browser! It will get better ... eventually.
+        </p>
+
+        <h4>Separate links</h4>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <a href="javascript:" class="col-xs-3 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom bk-fg-white bk-rd-l">
+                                aligned to bottom
+                            </a>
+                            <a href="javascript:" class="col-xs-3 bk-bg-danger bk-bg-lighten bk-fg-white">
+                                centered content
+                            </a>
+                            <a href="javascript:" class="col-xs-3 bk-pd-15 bk-bg-success bk-bg-lighten bk-fg-white">
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3
+                            </a>
+                            <a href="javascript:" class="col-xs-3 bk-pd-15 bk-bg-warning bk-bg-lighten bk-fg-white bk-top bk-rd-r">
+                                aligned to top
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-pd-off&quot;&gt;
+        &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-3 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom bk-fg-white bk-rd-l&quot;&gt;
+                aligned to bottom
+            &lt;/a&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-3 bk-bg-danger bk-bg-lighten bk-fg-white&quot;&gt;
+                centered content
+            &lt;/a&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-3 bk-pd-15 bk-bg-success bk-bg-lighten bk-fg-white&quot;&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3
+            &lt;/a&gt;
+            &lt;a href=&quot;javascript:&quot; class=&quot;col-xs-3 bk-pd-15 bk-bg-warning bk-bg-lighten bk-fg-white bk-top bk-rd-r&quot;&gt;
+                aligned to top
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h4>One link</h4>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="panel bk-widget bk-bd-off">
+                    <a class="panel-body bk-pd-off">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-3 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom bk-fg-white bk-rd-l">
+                                aligned to bottom
+                            </div>
+                            <div class="col-xs-3 bk-bg-danger bk-bg-lighten bk-fg-white">
+                                centered content
+                            </div>
+                            <div class="col-xs-3 bk-pd-15 bk-bg-success bk-bg-lighten bk-fg-white">
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3<br>
+                                col-xs-3
+                            </div>
+                            <div class="col-xs-3 bk-pd-15 bk-bg-warning bk-bg-lighten bk-fg-white bk-top bk-rd-r">
+                                aligned to top
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a class=&quot;panel-body bk-pd-off&quot;&gt;
+        &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+            &lt;div class=&quot;col-xs-3 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom bk-fg-white bk-rd-l&quot;&gt;
+                aligned to bottom
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-3 bk-bg-danger bk-bg-lighten bk-fg-white&quot;&gt;
+                centered content
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-3 bk-pd-15 bk-bg-success bk-bg-lighten bk-fg-white&quot;&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3&lt;br&gt;
+                col-xs-3
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-3 bk-pd-15 bk-bg-warning bk-bg-lighten bk-fg-white bk-top bk-rd-r&quot;&gt;
+                aligned to top
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

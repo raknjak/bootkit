@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        BootKit - pointers
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">POINTERS</h1>
+
+        <p class="lead bk-fg-gray">
+            Triangular shapes which can be used as horizontal or vertical pointers aimed at another cell or panel body.<br>
+            Default pointer height and width are 12 pixels but this can easily be changed with 2 LESS variables.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg bk-300">Available classes</h2>
+
+        <ul class="list-unstyled">
+            <li><code>bk-pt</code>: declares a cell to havae a pointer.</li>
+            <li><code>bk-pt-l-*</code>: adds a pointer to the left of a cell (replace the * by a color name e.g. success, danger, ...).</li>
+            <li><code>bk-pt-r-*</code>: adds a pointer to the right of a cell.</li>
+            <li><code>bk-pt-t-*</code>: adds a pointer to the top of a cell.</li>
+            <li><code>bk-pt-b-*</code>: adds a pointer to the bottom of a cell.</li>
+        </ul>
+
+
+        <h2 class="bk-d-mg">USING INLINE-BLOCK</h2>
+
+
+        <h4>Examples</h4>
+
+        <div class="panel bk-widget bk-bd-off">
+            <div class="panel-body bk-ltr text-center">
+                <div class="row bk-fg-white bk-bg-danger">
+                    <div class="col-xs-4 bk-vcenter bk-pd-15 bk-bg-primary bk-pt bk-pt-r-primary">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-vcenter bk-bg-warning bk-pd-15 bk-pt bk-pt-r-warning">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-vcenter bk-pd-15">
+                        col-xs-4
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel-body bk-ltr text-center&quot;&gt;
+    &lt;div class=&quot;row bk-fg-white bk-bg-danger&quot;&gt;
+        &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15 bk-bg-primary bk-pt bk-pt-r-primary&quot;&gt;
+            col-xs-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-4 bk-vcenter bk-bg-warning bk-pd-15 bk-pt bk-pt-r-warning&quot;&gt;
+            col-xs-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15&quot;&gt;
+            col-xs-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <div class="panel bk-widget bk-bd-off">
+            <div class="panel-body bk-ltr text-center">
+                <div class="row bk-fg-white bk-bg-success">
+                    <div class="col-xs-4 bk-vcenter bk-pd-15 bk-bg-info">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-vcenter bk-bg-gray bk-pd-15 bk-pt bk-pt-l-gray">
+                        col-xs-4
+                    </div>
+                    <div class="col-xs-4 bk-vcenter bk-pd-15 bk-pt bk-pt-l-success">
+                        col-xs-4
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-ltr text-center&quot;&gt;
+        &lt;div class=&quot;row bk-fg-white bk-bg-success&quot;&gt;
+            &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15 bk-bg-info&quot;&gt;
+                col-xs-4
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 bk-vcenter bk-bg-gray bk-pd-15 bk-pt bk-pt-l-gray&quot;&gt;
+                col-xs-4
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 bk-vcenter bk-pd-15 bk-pt bk-pt-l-success&quot;&gt;
+                col-xs-4
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+        <h2 class="bk-d-mg">USING TABLES</h2>
+
+        <p>(use these if you need content with unequal height)</p>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-ltr bk-fg-white bk-rd">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-6 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom bk-pt bk-pt-r-info">
+                                left content
+                            </div>
+                            <div class="col-xs-6 bk-bg-danger bk-bg-lighten bk-fg-white bk-rd-r">
+                                right content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-ltr bk-fg-white">
+                        <div class="row bk-tbl text-center">
+                            <div class="col-xs-6 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom">
+                                left content
+                            </div>
+                            <div class="col-xs-6 bk-bg-danger bk-bg-lighten bk-fg-white bk-pt bk-pt-l-danger bk-rd-r">
+                                centered content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-ltr bk-fg-white bk-rd&quot;&gt;
+        &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+            &lt;div class=&quot;col-xs-6 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom bk-pt bk-pt-r-info&quot;&gt;
+                left content
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-6 bk-bg-danger bk-bg-lighten bk-fg-white bk-rd-r&quot;&gt;
+                right content
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-ltr bk-fg-white&quot;&gt;
+        &lt;div class=&quot;row bk-tbl text-center&quot;&gt;
+            &lt;div class=&quot;col-xs-6 bk-bg-info bk-bg-lighten bk-pd-15 bk-bottom&quot;&gt;
+                left content
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-6 bk-bg-danger bk-bg-lighten bk-fg-white bk-pt bk-pt-l-danger bk-rd-r&quot;&gt;
+                centered content
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h2 class="bk-d-mg">STACKED PANEL BODIES</h2>
+
+        <p>
+            <code>bk-overflow</code> is used to make sure overflow is not hidden. This implies we need to add <code>bk-rd-t</code> and <code>bk-rd-b</code>
+            to top and bottom panel bodies to "repair" the border radius when needed.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off bk-fg-white bk-overflow">
+                    <div class="panel-body text-center bk-bg-primary bk-pt bk-pt-b-primary bk-rd-t">
+                        primary<br>panel body
+                    </div>
+                    <div class="panel-body text-center bk-bg-success bk-pt bk-pt-b-success bk-pd-t-20">
+                        success<br>panel body
+                    </div>
+                    <div class="panel-body text-center bk-bg-danger bk-pt bk-pt-b-danger bk-pd-t-20 bk-rd-b">
+                        info<br>panel body
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="panel bk-widget bk-bd-off bk-fg-white bk-overflow">
+                    <div class="panel-body text-center bk-bg-primary bk-pt bk-pt-t-primary bk-pd-b-20 bk-rd-t">
+                        primary<br>panel body
+                    </div>
+                    <div class="panel-body text-center bk-bg-success bk-pt bk-pt-t-success bk-pd-b-20">
+                        success<br>panel body
+                    </div>
+                    <div class="panel-body text-center bk-bg-danger bk-pt bk-pt-t-danger bk-rd-b">
+                        info<br>panel body
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off bk-fg-white bk-overflow&quot;&gt;
+    &lt;div class=&quot;panel-body text-center bk-bg-primary bk-pt bk-pt-b-primary bk-rd-t&quot;&gt;
+        primary&lt;br&gt;panel body
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-body text-center bk-bg-success bk-pt bk-pt-b-success bk-pd-t-20&quot;&gt;
+        success&lt;br&gt;panel body
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-body text-center bk-bg-danger bk-pt bk-pt-b-danger bk-pd-t-20 bk-rd-b&quot;&gt;
+        info&lt;br&gt;panel body
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off bk-fg-white bk-overflow&quot;&gt;
+    &lt;div class=&quot;panel-body text-center bk-bg-primary bk-pt bk-pt-t-primary bk-pd-b-20 bk-rd-t&quot;&gt;
+        primary&lt;br&gt;panel body
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-body text-center bk-bg-success bk-pt bk-pt-t-success bk-pd-b-20&quot;&gt;
+        success&lt;br&gt;panel body
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-body text-center bk-bg-danger bk-pt bk-pt-t-danger bk-rd-b&quot;&gt;
+        info&lt;br&gt;panel body
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

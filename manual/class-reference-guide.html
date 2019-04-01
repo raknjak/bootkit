@@ -1,0 +1,2652 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="../docs/css/not-in-project.css" rel="stylesheet">
+    <link href="../docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../docs/js/html5shiv.js"></script>
+    <script src="../docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        Bootkit - widget toolkit for Bootstrap
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="../index.html">BootKit home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">CLASS REFERENCE GUIDE</h1>
+
+        <p class="lead bk-fg-gray">
+            All available classes in one big list.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">1. Core classes</h3>
+
+                <p class="bk-fg-danger">
+                    less/bootkit/core-classes.less
+                </p>
+
+                <p class="bk-mg-off-b">
+                    The most generic of all BootKit classes.
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+            <tr>
+                <th style="width: 180px">Name</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td colspan="3">
+                    <h4>MISC</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>bk-overflow-off</td>
+                <td>Turn off overflow by setting it to hidden.</td>
+                <td>Used to override overflow when for example it's interfering with other elements.</td>
+            </tr>
+            <tr>
+                <td>bk-overflow</td>
+                <td>Turn on overflow by setting it to visible.</td>
+                <td>Used to override overflow.</td>
+            </tr>
+
+            <tr>
+                <td>bk-wrap-off</td>
+                <td>Turn off wrap on text with the white-space command.</td>
+                <td>Text handling</td>
+            </tr>
+
+            <tr>
+                <td>bk-outline-off</td>
+                <td>Turn off outline with !important.</td>
+                <td>Any element that needs it.</td>
+            </tr>
+
+            <tr>
+                <td>bk-box-shadow-off</td>
+                <td>Turn off box-shadow with !important.</td>
+                <td>Any element that needs it.</td>
+            </tr>
+
+            <tr>
+                <td>bk-wrapper</td>
+                <td>Makes the target element receive a relative position.</td>
+                <td>Where relatively and absolutely positioned child elements need to relate to a certain parent.</td>
+            </tr>
+
+            <tr>
+                <td>bk-chrome-fix</td>
+                <td>Temporary solution to take care of annoying chrome/webkit bugs regarding rounded corners where content does not align properly in responsive environments
+                    because overflow:hidden is not working as it should.</td>
+                <td>In certain cases this class is needed on the panel class to make sure the rounded corners from the panel parent are respected.<br>
+                    There are some examples explained in this manual. Experiment with usage when you see quirks in Chrome.</td>
+            </tr>
+
+            <tr>
+                <td>bk-block</td>
+                <td>Sets the level of an element to block.</td>
+                <td>Comes in handy when in quick need of transforming inline-elements without having to create a new class for them.</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <h4>FONT MANIPULATION</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-sml</td>
+                <td>Sets text to 80% font size.</td>
+                <td>Emulates the HTML small tag because always using those is pesky.</td>
+            </tr>
+
+            <tr>
+                <td>bk-300</td>
+                <td>Sets text to 300 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+            <tr>
+                <td>bk-400</td>
+                <td>Sets text to 400 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+            <tr>
+                <td>bk-500</td>
+                <td>Sets text to 500 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+            <tr>
+                <td>bk-600</td>
+                <td>Sets text to 600 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+            <tr>
+                <td>bk-700</td>
+                <td>Sets text to 700 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+            <tr>
+                <td>bk-800</td>
+                <td>Sets text to 800 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+            <tr>
+                <td>bk-900</td>
+                <td>Sets text to 900 font weight.</td>
+                <td>Setting font sizes on the fly.</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <h4>RADIUS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-round</td>
+                <td>Sets a 50% radius.</td>
+                <td>Mostly used on borders and background to create circular containers.</td>
+            </tr>
+            <tr>
+                <td>bk-rd</td>
+                <td>Adds the Bootstrap panel radius.</td>
+                <td>To add radius to for example child elements not respecting the parent panel border radius. The infamous background bleed issues.
+                    <br>
+                    The amount of cornering is determined by the <code>@panel-border-radius</code> variable that comes with Bootstrap.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-off</td>
+                <td>Turn off border radius from any element.</td>
+                <td>Override the default border radius when needed.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-off-t</td>
+                <td>Removes a radius to the top of target element.</td>
+                <td>To remove top radius from elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-off-b</td>
+                <td>Removes a radius to the bottom of target element.</td>
+                <td>To remove bottom radius from elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-off-l</td>
+                <td>Removes a radius to the left of target element.</td>
+                <td>To remove left radius from elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-off-r</td>
+                <td>Removes a radius to the right of target element.</td>
+                <td>To remove right radius from elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-t</td>
+                <td>Add a radius to the top of target element.</td>
+                <td>To add top radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-t-l</td>
+                <td>Add a radius to the top left of target element.</td>
+                <td>To add top left radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-t-r</td>
+                <td>Add a radius to the top right of target element.</td>
+                <td>To add top right radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-b</td>
+                <td>Add a radius to the bottom of target element.</td>
+                <td>To add bottom radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-b-l</td>
+                <td>Add a radius to the bottom left of target element.</td>
+                <td>To add bottom left radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-b-r</td>
+                <td>Add a radius to the bottom right of target element.</td>
+                <td>To add bottom right radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-l</td>
+                <td>Add a radius to the left of target element.</td>
+                <td>To add left radius to elements.</td>
+            </tr>
+            <tr>
+                <td>bk-rd-r</td>
+                <td>Add a radius to the right of target element.</td>
+                <td>To add right radius to elements.</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <h4>CALCULATED MARGINS</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>bk-d-mg</td>
+                <td>Add a top margin of 50 pixels to the element.</td>
+                <td>To push down titles, sections and create nice whitespace between them. Can be set dynamically in LESS with <code>@bk-margin</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-u-mg</td>
+                <td>Add a bottom margin of 50 pixels to the element.</td>
+                <td>To push up titles, sections and create nice whitespace underneath them. Can be set dynamically in LESS with <code>@bk-margin</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-d-mg-sm</td>
+                <td>Add a top margin of 25 pixels to the element.</td>
+                <td>To push down titles, sections but not as much as the above. Is calculated like <code>ceil(@bk-margin/2)</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-u-mg-sm</td>
+                <td>Add a bottom margin of 25 pixels to the element.</td>
+                <td>To push up titles, sections but not as much as the above. Is calculated like <code>ceil(@bk-margin/2)</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-d-mg-xs</td>
+                <td>Add a top margin of 13 pixels to the element.</td>
+                <td>To push down titles, sections but just a little bit. Is calculated like <code>ceil(@bk-margin/4)</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-u-mg-xs</td>
+                <td>Add a bottom margin of 13 pixels to the element.</td>
+                <td>To push up titles, sections but just a little bit. Is calculated like <code>ceil(@bk-margin/4)</code>.</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <h4>CALCULATED PADDING</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-d-pd</td>
+                <td>Add a top padding of 50 pixels to the element.</td>
+                <td>To push down titles, sections and create nice whitespace between them. Can be set dynamically in LESS with <code>@bk-padding</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-u-pd</td>
+                <td>Add a bottom padding of 50 pixels to the element.</td>
+                <td>To push up titles, sections and create nice whitespace between them. Can be set dynamically in LESS with <code>@bk-padding</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-d-pd-sm</td>
+                <td>Add a top padding of 25 pixels to the element.</td>
+                <td>To push down titles, sections but not as much as the above. Is calculated like <code>ceil(@bk-padding/4)</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-u-pd-sm</td>
+                <td>Add a bottom padding of 25 pixels to the element.</td>
+                <td>To push up titles, sections but not as much as the above. Is calculated like <code>ceil(@bk-padding/4)</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-u-pd-xs</td>
+                <td>Add a bottom padding of 13 pixels to the element.</td>
+                <td>To push down titles, sections but just a little bit. Is calculated like <code>ceil(@bk-padding/4)</code>.</td>
+            </tr>
+
+            <tr>
+                <td>bk-u-pd-xs</td>
+                <td>Add a bottom padding of 13 pixels to the element.</td>
+                <td>To push up titles, sections but just a little bit. Is calculated like <code>ceil(@bk-padding/4)</code>.</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <h4>FIXED MARGINS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-mg-5</td>
+                <td>Adds a 5 pixel margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-10</td>
+                <td>Adds a 10 pixel margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-15</td>
+                <td>Adds a 15 pixel margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-t-5</td>
+                <td>Adds a 5 pixel top margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-b-5</td>
+                <td>Adds a 5 pixel bottom margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-r-5</td>
+                <td>Adds a 5 pixel right margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-l-5</td>
+                <td>Adds a 5 pixel left margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-t-10</td>
+                <td>Adds a 10 pixel top margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-b-10</td>
+                <td>Adds a 10 pixel bottom margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-r-10</td>
+                <td>Adds a 10 pixel right margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-l-10</td>
+                <td>Adds a 10 pixel left margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-t-15</td>
+                <td>Adds a 15 pixel top margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-b-15</td>
+                <td>Adds a 15 pixel bottom margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-r-15</td>
+                <td>Adds a 15 pixel right margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-l-15</td>
+                <td>Adds a 15 pixel left margin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-off</td>
+                <td>Turns off margins for this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-off-t</td>
+                <td>Turns off top margins for this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-off-r</td>
+                <td>Turns off right margins for this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-off-b</td>
+                <td>Turns off bottom margins for this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-mg-off-l</td>
+                <td>Turns off left margins for this element.</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <h4>FIXED PADDING</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-pd-5</td>
+                <td>Adds 5 pixel padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-10</td>
+                <td>Adds 10 pixel padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-15</td>
+                <td>Adds 15 pixel padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-20</td>
+                <td>Adds 20 pixel padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-30</td>
+                <td>Adds 30 pixel padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-40</td>
+                <td>Adds 40 pixel padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-t-5</td>
+                <td>Adds 5 pixel top padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-r-5</td>
+                <td>Adds 5 pixel right padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-b-5</td>
+                <td>Adds 5 pixel bottom padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-l-5</td>
+                <td>Adds 5 pixel left padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-t-10</td>
+                <td>Adds 10 pixel top padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-r-10</td>
+                <td>Adds 10 pixel right padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-b-10</td>
+                <td>Adds 10 pixel bottom padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-l-10</td>
+                <td>Adds 10 pixel left padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-t-15</td>
+                <td>Adds 15 pixel top padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-r-15</td>
+                <td>Adds 15 pixel right padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-b-15</td>
+                <td>Adds 15 pixel bottom padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-l-15</td>
+                <td>Adds 15 pixel left padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-t-20</td>
+                <td>Adds 20 pixel top padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-r-20</td>
+                <td>Adds 20 pixel right padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-b-20</td>
+                <td>Adds 20 pixel bottom padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-l-20</td>
+                <td>Adds 20 pixel left padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-t-30</td>
+                <td>Adds 30 pixel top padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-r-30</td>
+                <td>Adds 30 pixel right padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-b-30</td>
+                <td>Adds 30 pixel bottom padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-l-30</td>
+                <td>Adds 30 pixel left padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-t-40</td>
+                <td>Adds 40 pixel top padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-r-40</td>
+                <td>Adds 40 pixel right padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-b-40</td>
+                <td>Adds 40 pixel bottom padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-l-40</td>
+                <td>Adds 40 pixel left padding.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-off</td>
+                <td>Remove all padding from this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-off-t</td>
+                <td>Remove all top padding from this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-off-r</td>
+                <td>Remove all right padding from this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-off-b</td>
+                <td>Remove all bottom padding from this element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-pd-off-l</td>
+                <td>Remove all left padding from this element.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">2. Widget classes</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/widgets.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>bk-widget</td>
+                    <td>Add this to a panel to turn it into a BootKit widget.</td>
+                    <td>The panel that is turned into a widget receives some special styling to prepare it for being a container for styled panel bodies.</td>
+                </tr>
+                <tr>
+                    <td>bk-img-radius</td>
+                    <td>Fix for Chrome on windows images and border radius pixel shifting.</td>
+                    <td>Use when images inside child elements do not respect outer border radius. <strong>Must be a child of <code>bk-widget</code></strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">3. Backgrounds</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/backgrounds.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h4>COLORS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-bg-primary</td>
+                <td>Set primary color as element background.</td>
+                <td class="bk-bg-primary"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-primary-darker</td>
+                <td>Set a darker version of the primary color as element background.</td>
+                <td class="bk-bg-primary-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-primary-lighter</td>
+                <td>Set a lighter version of the primary color as element background.</td>
+                <td class="bk-bg-primary-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-success</td>
+                <td>Set success color as element background.</td>
+                <td class="bk-bg-success"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-success-darker</td>
+                <td>Set a darker version of the success color as element background.</td>
+                <td class="bk-bg-success-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-success-lighter</td>
+                <td>Set a lighter version of the success color as element background.</td>
+                <td class="bk-bg-success-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-info</td>
+                <td>Set info color as element background.</td>
+                <td class="bk-bg-info"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-info-darker</td>
+                <td>Set a darker version of the info color as element background.</td>
+                <td class="bk-bg-info-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-info-lighter</td>
+                <td>Set a lighter version of the info color as element background.</td>
+                <td class="bk-bg-info-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-warning</td>
+                <td>Set warning color as element background.</td>
+                <td class="bk-bg-warning"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-warning-darker</td>
+                <td>Set a darker version of the warning color as element background.</td>
+                <td class="bk-bg-warning-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-warning-lighter</td>
+                <td>Set a lighter version of the warning color as element background.</td>
+                <td class="bk-bg-warning-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-danger</td>
+                <td>Set danger color as element background.</td>
+                <td class="bk-bg-danger"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-danger-darker</td>
+                <td>Set a darker version of the danger color as element background.</td>
+                <td class="bk-bg-danger-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-danger-lighter</td>
+                <td>Set a lighter version of the danger color as element background.</td>
+                <td class="bk-bg-danger-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-inverse</td>
+                <td>Set inverse color as element background.</td>
+                <td class="bk-bg-inverse"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-inverse-darker</td>
+                <td>Set a darker version of the inverse color as element background.</td>
+                <td class="bk-bg-inverse-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-inverse-lighter</td>
+                <td>Set a lighter version of the inverse color as element background.</td>
+                <td class="bk-bg-inverse-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-white</td>
+                <td>Set white color as element background.</td>
+                <td class="bk-bg-white"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-white-darker</td>
+                <td>Set a darker version of the white color as element background.</td>
+                <td class="bk-bg-white-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-very-light-gray</td>
+                <td>Set very-light-gray color as element background.</td>
+                <td class="bk-bg-very-light-gray"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-very-light-gray-darker</td>
+                <td>Set a darker version of the very-light-gray color as element background.</td>
+                <td class="bk-bg-very-light-gray-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-light-gray</td>
+                <td>Set light-gray color as element background.</td>
+                <td class="bk-bg-light-gray"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-light-gray-darker</td>
+                <td>Set a darker version of the light-gray color as element background.</td>
+                <td class="bk-bg-light-gray-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-light-gray-lighter</td>
+                <td>Set a lighter version of the light-gray color as element background.</td>
+                <td class="bk-bg-light-gray-lighter"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-gray</td>
+                <td>Set gray color as element background.</td>
+                <td class="bk-bg-gray"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-gray-darker</td>
+                <td>Set a darker version of the gray color as element background.</td>
+                <td class="bk-bg-gray-darker"></td>
+            </tr>
+            <tr>
+                <td>bk-bg-gray-lighter</td>
+                <td>Set a lighter version of the gray color as element background.</td>
+                <td class="bk-bg-gray-lighter"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4>ACTIONS</h4>
+                    <p>
+                        <strong>Remark!</strong> These classes do not work for the <code>*-darker</code> and <code>*-lighter</code> versions
+                        of the above colors. Only the 9 main colors have hover effects.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-bg-lighten</td>
+                <td>Lighten the background color <strong>on hover</strong>.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-darken</td>
+                <td>Darken the background color <strong>on hover</strong>.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">4. Borders</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/borders.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h4>COLORS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-bd-primary</td>
+                <td>Add primary color to element border.</td>
+                <td><div class="bk-bd-primary bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-primary</td>
+                <td>Add primary color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-primary-right</td>
+                <td>Add primary color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-success</td>
+                <td>Add primary color to element border.</td>
+                <td><div class="bk-bd-success bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-success</td>
+                <td>Add success color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-success-right</td>
+                <td>Add success color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-info</td>
+                <td>Add info color to element border.</td>
+                <td><div class="bk-bd-info bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-info</td>
+                <td>Add info color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-info-right</td>
+                <td>Add info color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-warning</td>
+                <td>Add warning color to element border.</td>
+                <td><div class="bk-bd-warning bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-warning</td>
+                <td>Add warning color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-warning-right</td>
+                <td>Add warning color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-danger</td>
+                <td>Add danger color to element border.</td>
+                <td><div class="bk-bd-danger bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-danger</td>
+                <td>Add danger color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-danger-right</td>
+                <td>Add danger color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-inverse</td>
+                <td>Add inverse color to element border.</td>
+                <td><div class="bk-bd-inverse bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-inverse</td>
+                <td>Add inverse color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-inverse-right</td>
+                <td>Add inverse color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-white</td>
+                <td>Add white color to element border.</td>
+                <td><div class="bk-bd-white bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-white</td>
+                <td>Add white color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-white-right</td>
+                <td>Add white color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-very-light-gray</td>
+                <td>Add very-light-gray color to element border.</td>
+                <td><div class="bk-bd-very-light-gray bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-very-light-gray</td>
+                <td>Add very-light-gray color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-very-light-gray-right</td>
+                <td>Add very light gray color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-light-gray</td>
+                <td>Add light-gray color to element border.</td>
+                <td><div class="bk-bd-light-gray bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-light-gray</td>
+                <td>Add light-gray color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-light-gray-right</td>
+                <td>Add light gray color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-gray</td>
+                <td>Add gray color to element border.</td>
+                <td><div class="bk-bd-gray bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-gray</td>
+                <td>Add gray color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-gray-right</td>
+                <td>Add gray color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td>bk-bd-textcolor</td>
+                <td>Add textcolor color to element border.</td>
+                <td><div class="bk-bd-textcolor bk-pd-10"></div></td>
+            </tr>
+            <tr>
+                <td>bk-bd-db-textcolor</td>
+                <td>Add textcolor color to element border with 4px padding (works well on avatars).</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-textcolor-right</td>
+                <td>Add textcolor color to right border.</td>
+                <td>Dividers</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4>ACTIONS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-bd-off</td>
+                <td>Remove all borders from element.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-2x</td>
+                <td>Set border to 2 pixels width.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-3x</td>
+                <td>Set border to 3 pixels width.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-4x</td>
+                <td>Set border to 4 pixels width.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-5x</td>
+                <td>Set border to 5 pixels width.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-lighten</td>
+                <td><strong>On hover</strong>, add a lighter color to the border.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bd-darken</td>
+                <td><strong>On hover</strong>, add a darker color to the border.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">5. Foreground</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/foreground.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h4>COLORS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-fg-primary</td>
+                <td>Set the text color to primary.</td>
+                <td class="bk-fg-primary">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-success</td>
+                <td>Set the text color to success.</td>
+                <td class="bk-fg-success">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-info</td>
+                <td>Set the text color to info.</td>
+                <td class="bk-fg-info">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-warning</td>
+                <td>Set the text color to warning.</td>
+                <td class="bk-fg-warning">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-danger</td>
+                <td>Set the text color to danger.</td>
+                <td class="bk-fg-danger">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-inverse</td>
+                <td>Set the text color to inverse.</td>
+                <td class="bk-fg-inverse">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-white</td>
+                <td>Set the text color to white.</td>
+                <td class="bk-fg-white">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-very-light-gray</td>
+                <td>Set the text color to very light gray.</td>
+                <td class="bk-fg-very-light-gray">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-light-gray</td>
+                <td>Set the text color to light gray.</td>
+                <td class="bk-fg-light-gray">The lazy fox</td>
+            </tr>
+            <tr>
+                <td>bk-fg-gray</td>
+                <td>Set the text color to gray.</td>
+                <td class="bk-fg-gray">The lazy fox</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4>ACTIONS</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>bk-fg-lighten</td>
+                <td><strong>On hover</strong> the text color will turn lighter.</td>
+                <td class="bk-fg-gray"></td>
+            </tr>
+            <tr>
+                <td>bk-fg-darken</td>
+                <td><strong>On hover</strong> the text color will turn darker.</td>
+                <td class="bk-fg-gray"></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">6. Alignment</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/alignment.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-ltr</td>
+                <td>This class prepares a panel body for having columns as child elements.</td>
+                <td>On the panel body or any wrapper containing the Bootstrap row/column structure.</td>
+            </tr>
+            <tr>
+                <td>bk-col-100pct</td>
+                <td>Adds 100% height to cells when using aligment.</td>
+                <td>Add this one when manually setting vertical aligment inside complex widgets. See the alignment docs for better understanding.</td>
+            </tr>
+            <tr>
+                <td>bk-vcenter</td>
+                <td>Vertical centering on floating elements.</td>
+                <td>Add to <em>each</em> floating element that needs vertical centering.</td>
+            </tr>
+            <tr>
+                <td>bk-list-vcenter</td>
+                <td>Vertically align content inside a list (ul).</td>
+                <td>When a list resides inside a column that has as class bk-vcenter then applying this class on said list will make sure
+                    the content is centered vertically.</td>
+            </tr>
+            <tr>
+                <td>bk-tbl</td>
+                <td>Vertical alignment but with CSS tables.</td>
+                <td>Add it to the row part of the Bootstrap row/column structure - the columns will automatically behave as table-cells.</td>
+            </tr>
+            <tr>
+                <td>bk-tbl-cell</td>
+                <td>When you need to create table structures manually, outside of the Bootstrap row/column structure.</td>
+                <td>Add to the direct children of <code>bk-tbl</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-bottom</td>
+                <td>Align cell content to the bottom.</td>
+                <td>Used to vertically center cells to the bottom when residing inside a <code>bk-tbl</code> structure.</td>
+            </tr>
+            <tr>
+                <td>bk-top</td>
+                <td>Align cell content to the top.</td>
+                <td>Used to vertically center cells to the top when residing inside a <code>bk-tbl</code> structure.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">7. Icons</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/icons.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-icon</td>
+                <td>Enables a containing element to receive styles for icons.</td>
+                <td>Add this to the containing element of the icon, it sets default behavior.</td>
+            </tr>
+            <tr>
+                <td>bk-icon-default</td>
+                <td>Declares a default icon container.</td>
+                <td>Add this to the containing element of the icon, it sets default behavior.</td>
+            </tr>
+            <tr>
+                <td>bk-icon-2x</td>
+                <td>Declares a container for an icon with fa-2x. Each icon size has a separate class with this name that handles sizing.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-icon-3x</td>
+                <td>Declares a container for an icon with fa-3x. Each icon size has a separate class with this name that handles sizing.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-icon-4x</td>
+                <td>Declares a container for an icon with fa-4x. Each icon size has a separate class with this name that handles sizing.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-icon-5x</td>
+                <td>Declares a container for an icon with fa-5x. Each icon size has a separate class with this name that handles sizing.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">8. Avatars</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/avatars.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-avatar</td>
+                <td>Declares the container for avatars.</td>
+                <td>Add to the containing element of the avatar in question.</td>
+            </tr>
+            <tr>
+                <td>bk-img-40</td>
+                <td>Width and height of avatar is set to 40 pixels.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-img-60</td>
+                <td>Width and height of avatar is set to 60 pixels.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-img-80</td>
+                <td>Width and height of avatar is set to 80 pixels.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-img-100</td>
+                <td>Width and height of avatar is set to 100 pixels.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-img-120</td>
+                <td>Width and height of avatar is set to 120 pixels.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar40-hcenter</td>
+                <td>Horizontal and vertical centering for 40 pixel avatars.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar60-hcenter</td>
+                <td>Horizontal and vertical centering for 60 pixel avatars.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar80-hcenter</td>
+                <td>Horizontal and vertical centering for 80 pixel avatars.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar100-hcenter</td>
+                <td>Horizontal and vertical centering for 100 pixel avatars.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar120-hcenter</td>
+                <td>Horizontal and vertical centering for 120 pixel avatars.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar80-halfdown</td>
+                <td>Half down positioning for 80 pixel avatars in relation to backgrounds (images) and the interacting panel bodies.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar100-halfdown</td>
+                <td>Half down positioning for 100 pixel avatars in relation to backgrounds (images) and the interacting panel bodies.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar120-halfdown</td>
+                <td>Half down positioning for 120 pixel avatars in relation to backgrounds (images) and the interacting panel bodies.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar80-halfdown-after</td>
+                <td>Give halfdown 80 pixel avatar panels the needed top padding to make them align correctly horizontally.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar100-halfdown-after</td>
+                <td>Give halfdown 100 pixel avatar panels the needed top padding to make them align correctly horizontally.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-avatar120-halfdown-after</td>
+                <td>Give halfdown 120 pixel avatar panels the needed top padding to make them align correctly horizontally.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-box-shadow</td>
+                <td>Adds a box shadow to an avatar image.</td>
+                <td>Add this class to the image child of bk-avatar.</td>
+            </tr>
+            <tr>
+                <td>bk-box-shadow-t</td>
+                <td>Adds a top box shadow to an avatar image.</td>
+                <td>Add this class to the image child of bk-avatar.</td>
+            </tr>
+            <tr>
+                <td>bk-box-shadow-b</td>
+                <td>Adds a bottom box shadow to an avatar image.</td>
+                <td>Add this class to the image child of bk-avatar.</td>
+            </tr>
+            <tr>
+                <td>bk-box-shadow-l</td>
+                <td>Adds a left box shadow to an avatar image.</td>
+                <td>Add this class to the image child of bk-avatar.</td>
+            </tr>
+            <tr>
+                <td>bk-box-shadow-r</td>
+                <td>Adds a right box shadow to an avatar image.</td>
+                <td>Add this class to the image child of bk-avatar.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">9. Hr</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/hr.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-hr-primary</td>
+                <td>Gives the hr a primary color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-success</td>
+                <td>Gives the hr a success color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-info</td>
+                <td>Gives the hr a info color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-warning</td>
+                <td>Gives the hr a warning color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-danger</td>
+                <td>Gives the hr a danger color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-inverse</td>
+                <td>Gives the hr a inverse color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-white</td>
+                <td>Gives the hr a white color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-very-light-gray</td>
+                <td>Gives the hr a very light gray color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-light-gray</td>
+                <td>Gives the hr a light gray color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-gray</td>
+                <td>Gives the hr a gray color.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-hr-textcolor</td>
+                <td>Gives the hr a textcolor color.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">10. Gradients</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/gradients.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-grd-v-t-primary</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-primary</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-primary</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-primary</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-primary</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-primary</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-primary</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-primary</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-success</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-success</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-success</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-success</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-success</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-success</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-success</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-success</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-info</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-info</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-info</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-info</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-info</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-info</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-info</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-info</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-warning</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-warning</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-warning</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-warning</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-warning</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-warning</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-warning</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-warning</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-danger</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-danger</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-danger</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-danger</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-danger</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-danger</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-danger</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-danger</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-inverse</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-inverse</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-inverse</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-inverse</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-inverse</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-inverse</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-inverse</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-inverse</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-gray</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-gray</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-gray</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-gray</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-gray</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-gray</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-gray</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-gray</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-light-gray</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-light-gray</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-light-gray</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-light-gray</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-light-gray</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-light-gray</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-light-gray</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-light-gray</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+
+            <tr>
+                <td>bk-grd-v-t-very-light-gray</td>
+                <td>Top (light) to bottom (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-v-b-very-light-gray</td>
+                <td>Bottom (light) to top (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-l-very-light-gray</td>
+                <td>Left (light) to right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-h-r-very-light-gray</td>
+                <td>Right (light) to left (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-45-very-light-gray</td>
+                <td>Diagonal (45°) top-left (light) to bottom-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-d-135-very-light-gray</td>
+                <td>Diagonal (135°) bottom-left (light) to top-right (dark) gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-r-very-light-gray</td>
+                <td>Radial gradient (center is light, edges dark).</td>
+                <td>On the panel body.</td>
+            </tr>
+            <tr>
+                <td>bk-grd-s-very-light-gray</td>
+                <td>Striped gradient.</td>
+                <td>On the panel body.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">11. Opacity</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/opacity.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-opacity</td>
+                <td>Enables a link to have an opacity of .8 on hover.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-inv</td>
+                <td>Enables a link to have an opacity of 1 on hover whilst having one of .8 in normal status.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-2</td>
+                <td>Sets the opacity of the target element to .2.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-4</td>
+                <td>Sets the opacity of the target element to .4.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-5</td>
+                <td>Sets the opacity of the target element to .5.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-6</td>
+                <td>Sets the opacity of the target element to .6.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-8</td>
+                <td>Sets the opacity of the target element to .8.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-light</td>
+                <td>An overlay which sets <code>background: rgba(255,255,255,0.1);</code> to a wrapper element.</td>
+                <td>On any element.</td>
+            </tr>
+            <tr>
+                <td>bk-opacity-dark</td>
+                <td>An overlay which sets <code>background: rgba(0,0,0,0.1);</code> to a wrapper element.</td>
+                <td>On any element.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">12. Pointers</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/pointers.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-pt</td>
+                <td>Declares a cell to have a pointer.</td>
+                <td>guaranteed to work on Bootstrap row/column constructions with alignment e.g. <code>bk-ltr</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-primary</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-primary</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-primary</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-primary</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-success</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-success</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-success</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-success</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-info</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-info</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-info</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-info</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-warning</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-warning</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-warning</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-warning</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-danger</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-danger</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-danger</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-danger</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-inverse</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-inverse</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-inverse</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-inverse</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-gray</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-gray</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-gray</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-gray</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-light-gray</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-light-gray</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-light-gray</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-light-gray</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-very-light-gray</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-very-light-gray</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-very-light-gray</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-very-light-gray</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-l-white</td>
+                <td>Add a pointer to the left at the left edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-r-white</td>
+                <td>Add a pointer to the right at the right edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-b-white</td>
+                <td>Add a pointer to the bottom at the bottom edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            <tr>
+                <td>bk-pt-t-white</td>
+                <td>Add a pointer to the top at the top edge of the element or cell.</td>
+                <td>Add it to a cell in a row/column construct.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">13. Seven columns</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/7cols.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-seven-cols</td>
+                <td>Lets a Bootstrap row know to use the special seven column layout.</td>
+                <td>On the row part of the Bootstrap row/column construct.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">14. Social</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootkit/social.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+                <tr>
+                    <th style="width: 180px">Name</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-fg-facebook</td>
+                <td>Sets the text color to the one defined for Facebook.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-facebook</td>
+                <td>Sets the background color to the one defined for Facebook.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-twitter</td>
+                <td>Sets the text color to the one defined for Twitter.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-twitter</td>
+                <td>Sets the background color to the one defined for Twitter.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-google-plus</td>
+                <td>Sets the text color to the one defined for Google+.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-google-plus</td>
+                <td>Sets the background color to the one defined for Google+.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-youtube</td>
+                <td>Sets the text color to the one defined for Youtube.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-youtube</td>
+                <td>Sets the background color to the one defined for Youtube.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-github</td>
+                <td>Sets the text color to the one defined for Github.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-github</td>
+                <td>Sets the background color to the one defined for Github.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-linkedin</td>
+                <td>Sets the text color to the one defined for LinkedIn.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-linkedin</td>
+                <td>Sets the background color to the one defined for LinkedIn.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-instagram</td>
+                <td>Sets the text color to the one defined for Instagram.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-instagram</td>
+                <td>Sets the background color to the one defined for Instagram.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-pinterest</td>
+                <td>Sets the text color to the one defined for Pinterest.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-pinterest</td>
+                <td>Sets the background color to the one defined for Pinterest.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-vine</td>
+                <td>Sets the text color to the one defined for Vine.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-vine</td>
+                <td>Sets the background color to the one defined for Vine.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-jsfiddle</td>
+                <td>Sets the text color to the one defined for JSFiddle.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-jsfiddle</td>
+                <td>Sets the background color to the one defined for JSFiddle.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-paypal</td>
+                <td>Sets the text color to the one defined for Paypal.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-paypal</td>
+                <td>Sets the background color to the one defined for Paypal.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-flickr</td>
+                <td>Sets the text color to the one defined for Flickr.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-flickr</td>
+                <td>Sets the background color to the one defined for Flickr.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-tumblr</td>
+                <td>Sets the text color to the one defined for Tumblr.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-tumblr</td>
+                <td>Sets the background color to the one defined for Tumblr.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-vk</td>
+                <td>Sets the text color to the one defined for VKontakte.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-vk</td>
+                <td>Sets the background color to the one defined for VKontakte.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-vimeo</td>
+                <td>Sets the text color to the one defined for Vimeo.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-vimeo</td>
+                <td>Sets the background color to the one defined for Vimeo.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-foursquare</td>
+                <td>Sets the text color to the one defined for Foursquare.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-foursquare</td>
+                <td>Sets the background color to the one defined for Foursquare.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-fg-dribbble</td>
+                <td>Sets the text color to the one defined for Dribbble.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-bg-dribbble</td>
+                <td>Sets the background color to the one defined for Dribbble.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">15. jQuery Slimscroll</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/vendor/slimscroll.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+            <tr>
+                <th style="width: 180px">Name</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-scroll</td>
+                <td>Sets <code>overflow: hidden; max-height: 300px;</code> to the element.</td>
+                <td>Used for having Slimscroll set up quickly by using this default container layout.</td>
+            </tr>
+            <tr>
+                <td>slimScrollBar</td>
+                <td>We turn the border radius off on the scrollbar - should be adapted to your preference</td>
+                <td><em>No usage: auto-generated by plugin</em></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">16. jQuery Sparklines</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/vendor/sparklines.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+            <tr>
+                <th style="width: 180px">Name</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>jqstooltip</td>
+                <td>A fix for the tooltip in Chrome.</td>
+                <td><em>No usage: auto-generated by plugin</em></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">17. Carousel</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootstrap/carousel.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+            <tr>
+                <th style="width: 180px">Name</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-carousel-ctrl</td>
+                <td>Custom styling for the left and right navigation.</td>
+                <td>On the Bootstrap carousel custom widget navigation elements.</td>
+            </tr>
+            <tr>
+                <td>bk-carousel-hide-init</td>
+                <td>Hide controls on page load.</td>
+                <td>On the Bootstrap carousel custom widget navigation elements.</td>
+            </tr>
+            <tr>
+                <td>bk-custom-ctrl</td>
+                <td>Custom controls for outside carousel (arrows left, right, top bottom of carousel).</td>
+                <td>On the Bootstrap carousel custom widget navigation elements.</td>
+            </tr>
+            <tr>
+                <td>bk-fade</td>
+                <td>Usable only with <code>carousel</code> - makes the slides fade in stead of slide (see example code for better insights).</td>
+                <td>On the Bootstrap carousel custom widget navigation elements.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">18. Progress bars</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootstrap/progress-bars.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+            <tr>
+                <th style="width: 180px">Name</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-progress-xxs</td>
+                <td>Very thin progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-progress-xs</td>
+                <td>Quite hin progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-progress-sm</td>
+                <td>Thin progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-progress-md</td>
+                <td>Medium progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-progress-xl</td>
+                <td>Large progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-progress-xxl</td>
+                <td>Quite large progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+            <tr>
+                <td>bk-progress-xxxl</td>
+                <td>Very large progress bar.</td>
+                <td>On the progress bar: <code>progress</code>.</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+
+        <div class="panel bk-widget bk-bd-off bk-rd-off bk-d-mg">
+            <div class="panel-body bk-bg-white">
+                <h3 class="bk-mg-off-t bk-700">19. Weather</h3>
+
+                <p class="bk-fg-danger bk-mg-off-b">
+                    less/bootstrap/weather.less
+                </p>
+
+            </div>
+        </div>
+
+        <table class="table table-bordered bk-bg-white">
+            <thead>
+            <tr>
+                <th style="width: 180px">Name</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bk-weather-plugin</td>
+                <td>Styles the simpleweatherjs plugin with a specific style.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-weather</td>
+                <td>Generic styles for the simpleweatherjs plugin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-wth-region</td>
+                <td>Specific text styles for the simpleweatherjs plugin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-wth-cur</td>
+                <td>Specific text styles for the simpleweatherjs plugin.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bk-wth-tmp-alt</td>
+                <td>Specific text styles for the simpleweatherjs plugin.</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: AUGUST 12TH, 2014</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  Copyright &copy; <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="../docs/css/not-in-project.css" rel="stylesheet">
+    <link href="../docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../docs/js/html5shiv.js"></script>
+    <script src="../docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        Bootkit - widget toolkit for Bootstrap
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="../index.html">BootKit home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">MANUAL</h1>
+
+        <p class="lead bk-fg-gray">
+            <span class="font-weight-600">Last updated:</span> January 30, 2015.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <p class="lead">
+            <strong>Warning</strong> BootKit 1.0.0 is not compatible with this new version 2.0.0. Too many changes were made in the
+            core code because some limitations in the first design were holding back further expansions.
+        </p>
+
+        <p class="lead">
+            <strong>Warning</strong> <a href="http://daneden.github.io/animate.css/">Animate.css</a> was removed from this version: it is quite easy to include into any project and it bloats
+            the CSS files unnecessarily.
+        </p>
+
+        <p class="lead">
+            <strong>Explanations are divided in sections which you can read on the <a href="../index.html">home page</a></strong>.
+        </p>
+
+        <h2 class="bk-d-mg bk-300">A. What is BootKit?</h2>
+
+        <ul class="list-unstyled">
+            <li><i class="fa fa-angle-right"></i> new classes are added for background, foreground, border, etc (<a href="../index.html">full list</a> is on front page);</li>
+            <li><i class="fa fa-angle-right"></i> override default colors, styles, functionalities;</li>
+            <li><i class="fa fa-angle-right"></i> create visually stunning "widgets", presenting content they way you want it.</li>
+            <li><i class="fa fa-angle-right"></i> pick out the classes you need and recompile BootKit to your strict requirements</li>
+            <li><i class="fa fa-angle-right"></i> expand with your own ideas, colors, plugins</li>
+        </ul>
+
+        <p>
+            In a nutshell, you can do anything you want with a wide range of extra classes at your hands.
+        </p>
+
+        <h2 class="bk-d-mg bk-300">B. Required knowlegde</h2>
+
+        <p>
+            To understand BootKit one also needs to have basic knowledge of the following skills:
+        </p>
+
+        <ul class="list-unstyled">
+            <li><i class="fa fa-angle-right"></i> Bootstrap;</li>
+            <li><i class="fa fa-angle-right"></i> HTML5;</li>
+            <li><i class="fa fa-angle-right"></i> CSS;</li>
+            <li><i class="fa fa-angle-right"></i> LESS would be nice to know but don't worry: it is explained in this manual.</li>
+        </ul>
+
+
+        <h2 class="bk-d-mg bk-300">C. Class-oriented design</h2>
+
+        <p>
+            BootKit has a class-based structure meaning we will be adding extra classes to existing Bootstrap elements to enhance their
+            visual appeal. When before using many classes inside an HTML document was frowned upon, today it is a valid technique to
+            maximize class usage and to keep the CSS file small (Bootstrap is bloated enough as it is).
+        </p>
+
+        <p>
+            The classes from bootKit core do not take that much disk space but when we start adding extra plugins like <a href="../slimscroll.html">SlimmScroll</a>
+            or <a href="../sparklines.html">Sparklines</a> The disk size of a Bootstrap CSS file could rise fast: these plugins don't always have
+            LESS code and their CSS is probably not always optimized. Be aware of this when adding third-party plugins.
+        </p>
+
+        <p>
+            For this and many other good reasons it is advisable to use <a href="http://www.feedthebot.com/pagespeed/enable-compression.html">file compression</a>.
+        </p>
+
+        <p class="bk-700">
+            Remark:
+            Most classes can be used anywhere in your project without having to put it inside a <code>bk-widget</code> panel.
+            The clases that are constraint to <code>bk-widget</code> wll be explicitly mentioned.
+        </p>
+
+        <h3 class="bk-300">Class reference guide</h3>
+
+        <a href="class-reference-guide.html">All classes in one big list</a>
+
+
+        <h2 class="bk-d-mg bk-300">D. Support</h2>
+
+        <p>
+            <a href="http://codecanyon.net/user/rakinjakk">Please use the contact form on the bottom right of this screen</a>.
+        </p>
+
+
+        <h2 class="bk-d-mg bk-300">E. Folder structure</h2>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="img/folder-structure.png" class="img-responsive">
+            </div>
+            <div class="col-sm-9">
+                <h4 class="bk-fg-inverse bk-mg-t-15 bk-700">CSS</h4>
+                <p>
+                    Contains all the bootstrap CSS files. Use the minified version in your live projects; the non-minified
+                    version is useful when debugging with your preferred browser inspector. If you can, gzip your Bootstrap files server side for even better loading times.<br>
+                    Also contains the separately compiled bootkit CSS files.
+                </p>
+
+                <h4 class="bk-fg-inverse bk-700">DOCS</h4>
+                <p>
+                    <i class="fa fa-chevron-circle-right"></i> <span class="font-weight-600">CSS:</span><br>
+                    <i class="fa fa-angle-right"></i> atelier-dune-light.css: used for styling code in the manual;<br>
+                    <i class="fa fa-angle-right"></i> not-in-project.css: styles used uniquely for documentqtion qnd previewing purposes.<br>
+                    <i class="fa fa-chevron-circle-right"></i> <span class="font-weight-600">JS:</span><br>
+                    Contains some stuff like HTML Shiv and respons.js and the code highlighting files.<br>
+                    <strong>The bootkit folder</strong> holds some JavaScript that is needed for Bootstrap components and vendor plugins to work.
+                </p>
+
+                <h4 class="bk-fg-inverse bk-mg-t-15 bk-700">FONTS</h4>
+                <p>
+                    Container for Font Awesome, Glyphicons and Weather Icons.
+                </p>
+                <h4 class="bk-fg-inverse bk-mg-t-15 bk-700">IMG</h4>
+                <p>
+                    Where your images could be stored.
+                </p>
+                <h4 class="bk-fg-inverse bk-mg-t-15 bk-700">JS</h4>
+                <p>
+                    Folder for only Bootstrap JS files.
+                </p>
+                <h4 class="bk-fg-inverse bk-mg-t-15 bk-700">LESS</h4>
+                <p>
+                    <i class="fa fa-chevron-circle-right"></i> <span class="font-weight-600">bootkit:</span> contains all BootKit LESS files - kept separately from Bootstrap LESS structure.<br>
+                    <i class="fa fa-chevron-circle-right"></i> <span class="font-weight-600">bootstrap:</span> contains all Bootstrap LESS files.<br>
+                    <i class="fa fa-chevron-circle-right"></i> <span class="font-weight-600">vendor:</span> contains third party tools like Font Awesome, Simpleweather, Weather Icons, slimScroll, Sparkline.<br>
+                </p>
+                <h4 class="bk-fg-inverse bk-mg-t-15 bk-700">VENDOR</h4>
+                <p>
+                    Contains third-party plugins needed for scrollbars, animations and skycons (mostly JavaScript files).
+                </p>
+            </div>
+        </div>
+
+
+        <h2 class="bk-d-mg bk-300">F. Getting started</h2>
+
+        <h3 class="bk-700">QUICKSTART</h3>
+        <p class="lead">
+            Want to get started with a fresh Bootstrap project? <span class="bk-fg-danger bk-700">All you have to do is replace the Bootstrap CSS file with the one in this project.</span> All
+            default Bootstrap functionality is kept available and untouched (<strong>except for bootstrap.less</strong> which is the place where bootkit styles are imported).
+        </p>
+
+        <h4>WHEN YOU NEED EVERYTHING</h4>
+
+        <pre><code>&lt;!-- Bootstrap core CSS --&gt;<br>&lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;</code></pre>
+
+        <h4>OR JUST THE BARE ESSENTIALS</h4>
+        <pre><code>&lt;!-- Bootstrap core CSS --&gt;<br>&lt;link href="css/bootstrap.essentials.min.css" rel="stylesheet"&gt;</code></pre>
+
+
+        <h3 class="bk-d-mg bk-700">EXISTING PROJECT</h3>
+
+        <div class="alert-success bk-pd-10">
+            <p class="lead">
+                Need to integrate it into an existing project? <strong>I highly encourage you to work with LESS</strong>:
+            </p>
+
+            <ul>
+                <li>copy the bootkit LESS files into your project, respecting the same folder structure as in this project (copy the less/bootkit folder and paste it into your less folder);</li>
+                <li>open less/bootstrap.less and add this line at the bottom: <code>@import "bootkit/core"</code>;</li>
+                <li>compile less/bootstrap.less to css/bootstrap.min.css (LESS is further explained below).</li>
+            </ul>
+        </div>
+
+        <p class="bk-mg-t-15">
+            If you <em>really</em> must, use the file bootkit.essentials.min.css. The file is only 20kB but still try LESS!<br>
+            There's also a full featured file sized 25kB called bootkit.essentials.css. Use this one when you need everything. Use LESS though, seriously.
+        </p>
+
+
+        <pre style="font-size: 14px;"><code>&lt;!-- Bootstrap core CSS --&gt;<br>&lt;link href="css/bootkit.essentials.min.css" rel="stylesheet"&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">G. Working with LESS</h2>
+
+        <h3 class="bk-300">Compilation choices.</h3>
+
+        <p class="lead alert alert-danger">
+            <i class="fa fa-warning"></i> <strong>There are two ways to compile:</strong><br>
+            - Advised: directly into Bootstrap (e.g. compile bootstrap/bootstrap.less to bootstrap.min.css)<br>
+            - stand-alone (e.g. compile bootkit/core.less to bootkit.essentials.min.css)
+        </p>
+
+        <strong>What are the bare essentials?</strong>
+        In bootkit/core.less we only allow these imports, the rest is commented out:
+        <br>
+        @import "core-classes";<br>
+        @import "mixins";<br>
+        @import "widget";<br>
+        @import "borders";<br>
+        @import "backgrounds";<br>
+        @import "foreground";<br>
+        @import "icons";<br>
+        @import "opacity";<br>
+        @import "avatars";<br>
+        @import "hr";<br>
+        <br>
+
+        <p class="lead alert alert-danger">
+            <i class="fa fa-warning"></i> Without any one of these the product is incomplete but will still work with the limited set of classes available.
+            This serves as an example of how we can cherry-pick the tools we need. You can even comment out individual rules in the LESS files.
+        </p>
+
+        <h3 class="bk-300">Compiling with WinLess</h3>
+
+        <p>
+            There are a few alternatives out there so this is just one software example.
+        </p>
+
+        <p class="lead alert alert-danger">
+            <i class="fa fa-warning"></i> Compilation is done by including the bootstrap.less file in our builds. All the other files are loaded directly
+            or indirectly by this file. We compile less/bootstrap/bootstrap.less (<em>or</em> less/bootkit/core.less for just the essentials).
+        </p>
+
+        <p>
+            Example for WinLess:<br>
+            <img src="img/winless.png">
+        </p>
+
+        <p class="lead">
+            If anything is unclear or when you have trouble loading or compiling, do not hesitate to contact me through my <a href="http://codecanyon.net/user/rakinjakk">CodeCanyon profile</a>.
+        </p>
+
+
+
+        <strong>CSS FILES EXPLAINED</strong>
+        <p>
+            In the css folder we have these files:
+        </p>
+
+        <ul class="list-unstyled">
+            <li>STAND-ALONE</li>
+            <li><strong>bootkit.essentials.css</strong>: only the bare essentials - 29kB</li>
+            <li><strong>bootkit.essentials.min.css</strong>: only the bare essentials and minified - 23kB</li>
+            <li><strong>bootkit.css</strong>: everything - 102kB</li>
+            <li><strong>bootkit.min.css</strong>: everything minified - 86kB</li>
+            <li><br>WITH BOOTSTRAP</li>
+            <li><strong>bootstrap.essentials.css</strong>: only the bare essentials + Bootstrap - 167kB</li>
+            <li><strong>bootstrap.essentials.min.css</strong>: only the bare essentials + Bootstrap and minified - 138kB</li>
+            <li><strong>bootstrap.css</strong>: everything + Bootstrap - 240kB</li>
+            <li><strong>bootstrap.min.css</strong>: everything + Bootstrap and minified - 201kB</li>
+        </ul>
+
+        <p class="lead alert alert-danger">
+            <i class="fa fa-warning"></i> When compiling only the bare essentials - or a custom setup with only those classes needed - we can
+            <strong>comment out lines in less/bootkit/core.less</strong>.
+            <br>
+        </p>
+        <div class="alert-warning bk-pd-15 lead">
+            <p>
+                <strong>Comment out LINE 24 - 59</strong> to get only the essential BootKit classes.
+                <br>
+                You can fine-tune by commenting out even more, most less files work separately from the others.
+            </p>
+            <p>
+                <i class="fa fa-warning"></i> If you want to compile <strong>stand-alone</strong> you will have to <strong>UNcomment lines 10-16</strong> to make sure
+                we catch all dependencies.
+            </p>
+
+        </div>
+
+        <p class="alert-warning bk-pd-15 lead bk-bg-danger bk-fg-white">
+            <i class="fa fa-warning"></i> <strong>Compiling the essentials only <span class="bk-fg-success">WITHOUT</span> Bootstrap</strong> is done by compiling <strong>less/bootkit/core.less</strong> directly to css/bootkit.essentials.css
+            or css/bootkit.essentials.min.css.
+        </p>
+
+        <p class="alert-warning bk-pd-15 lead bk-bg-danger bk-fg-white">
+            <strong>Compiling the bare essentials only <span class="bk-fg-success">WITH</span> Bootstrap</strong> is done by compiling <strong>less/bootstrap/bootstrap.less</strong> directly to bootstrap.essentials.css
+            or bootstrap.essentials.min.css.
+        </p>
+
+        <p class="alert-warning bk-pd-15 lead bk-bg-danger bk-fg-white">
+            <strong>Compiling <span class="bk-fg-success">EVERYTHING WITH</span> Bootstrap</strong> is done by compiling <strong>less/bootstrap/bootstrap.less</strong> directly to bootstrap.css
+            or bootstrap.min.css.
+        </p>
+
+        <h3 class="bk-700">Ask me if you are unsure or something is not working as it should.</h3>
+
+
+        <h2 class="bk-d-mg bk-300">H. Credits</h2>
+
+        <p>
+            <a href="http://rocha.la/jQuery-slimScroll">jQuery slimScroll</a><br>
+            <a href="http://omnipotent.net/jquery.sparkline/#s-about">jQuery Sparklines</a><br>
+            <a href="http://simpleweatherjs.com/">Simpleweatherjs</a><br>
+            <a href="http://darkskyapp.github.io/skycons/">skycons</a><br>
+            <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a><br>
+            <a href="http://erikflowers.github.io/weather-icons">Weather Icons</a><br>
+            <a href="http://uifaces.com/">UI Faces</a><br>
+            <a href="http://getbootstrap.com/">Bootstrap</a><br>
+        </p>
+
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

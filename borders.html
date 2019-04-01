@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        BootKit - borders
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">BORDERS</h1>
+
+        <p class="lead bk-fg-gray">
+            By default a Bootstrap panel has a border color but we usually want to change this to make our widgets look better.
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg bk-300">Available classes</h2>
+
+        <div class="panel bk-widget bk-bd-off bk-bg-white">
+            <div class="panel-body bk-bd-primary text-center bk-pd-5 bk-rd-t">
+                bk-bd-primary
+            </div>
+            <div class="panel-body bk-bd-success text-center bk-pd-5">
+                bk-bd-success
+            </div>
+            <div class="panel-body bk-bd-info text-center bk-pd-5">
+                bk-bd-info
+            </div>
+            <div class="panel-body bk-bd-warning text-center bk-pd-5">
+                bk-bd-warning
+            </div>
+            <div class="panel-body bk-bd-danger text-center bk-pd-5">
+                bk-bd-danger
+            </div>
+            <div class="panel-body bk-bd-inverse text-center bk-pd-5">
+                bk-bd-inverse
+            </div>
+            <div class="panel-body bk-bd-gray text-center bk-pd-5">
+                bk-bd-gray
+            </div>
+            <div class="panel-body bk-bd-light-gray text-center bk-pd-5">
+                bk-bd-light-gray
+            </div>
+            <div class="panel-body bk-bd-very-light-gray text-center bk-pd-5">
+                bk-bd-very-light-gray
+            </div>
+            <div class="panel-body bk-bg-inverse bk-bd-white bk-fg-white text-center bk-rd-b bk-pd-5">
+                bk-bd-white
+            </div>
+        </div>
+
+        <p class="lead alert alert-danger">
+            <i class="fa fa-warning bk-pd-r-5"></i> For a panel-body with rounded corners we use <code>bk-rd</code> (radius) as we need to redefine the radius on panel child elements
+            when using this technique.
+        </p>
+
+        <p>
+            Rounded corners can be defined for top, left, right and bottom.
+        </p>
+
+
+        <h4>Example</h4>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-bd-primary bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-white bk-bd-primary bk-rd bk-fg-primary text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;DISK SPACE&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-database fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Border width</h2>
+
+        <p>
+            We can determine the thickness of the border by adding an extra class.
+        </p>
+
+        <p class="lead alert alert-info">
+            <i class="fa fa-info bk-pd-r-5"></i> When you want to achieve a visually improved inner border radius, <strong><a href="http://blog.teamtreehouse.com/css-tip-better-rounded-borders">check out this article</a></strong>.
+            It suggests working with a bigger radius on the containing element (.panel) to make the inner radius look better.
+        </p>
+
+        <h4>Example</h4>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+
+                <p class="bk-mg-b-5">
+                    <code>bk-bd-2x</code>
+                </p>
+
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-bd-primary bk-bd-2x bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+
+                <p class="bk-mg-b-5">
+                    <code>bk-bd-3x</code>
+                </p>
+
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-bd-primary bk-bd-3x bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+
+                <p class="bk-mg-b-5">
+                    <code>bk-bd-3x</code>
+                </p>
+
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-bd-primary bk-bd-4x bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+
+                <p class="bk-mg-b-5">
+                    <code>bk-bd-3x</code>
+                </p>
+
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-bd-primary bk-bd-5x bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-white bk-bd-primary bk-bd-2x bk-rd bk-fg-primary text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;DISK SPACE&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-database fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Turning off the border</h2>
+        <p>
+            Can be achieved by adding the class <code>bk-bd-off</code>. This is generally used on panels to remove the default border in bootstrap but can be used anywhere.
+        </p>
+
+
+        <div class="row">
+
+            <div class="col-sm-3">
+
+                <div class="panel bk-widget bk-bd-off">
+                    <div class="panel-body bk-bg-white bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;div class=&quot;panel-body bk-bg-white bk-rd bk-fg-primary text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;DISK SPACE&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-database fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Hover effects</h2>
+
+        <p>
+            As with backgrounds, panel bodies with borders can receive an extra class to make them lighter or darker on hover.
+        </p>
+
+        <ul class="list-unstyled">
+            <li><code>bk-bd-darken</code></li>
+            <li><code>bk-bd-lighten</code></li>
+        </ul>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <h4>Darken</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <a href="javascript:" class="panel-body bk-bg-white bk-bd-primary bk-bd-5x bk-bd-darken bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h4>Lighten</h4>
+                <div class="panel bk-widget bk-bd-off">
+                    <a href="javascript:" class="panel-body bk-bg-white bk-bd-primary bk-bd-5x bk-bd-lighten bk-rd bk-fg-primary text-center">
+                        <h5 class="bk-mg-off">DISK SPACE</h5>
+                        <i class="fa fa-database fa-2x bk-pd-t-10"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a href=&quot;javascript:&quot;  class=&quot;panel-body bk-bg-white bk-bd-primary bk-bd-5x bk-bd-darken bk-rd bk-fg-primary text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;DISK SPACE&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-database fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a href=&quot;javascript:&quot;  class=&quot;panel-body bk-bg-white bk-bd-primary bk-bd-5x bk-bd-lighten bk-rd bk-fg-primary text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;DISK SPACE&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-database fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Redefining child element border colors</h2>
+
+        <p>
+            Child elements can havean overriding style when links are involved.
+            <br>
+            <br>
+            <strong>The example below on the left</strong> does not have a hover effect on the panel-body but has one on the child element styled with the primary color.
+            <br>
+            <strong>The example on the right</strong> has a panel-body border that becomes lighter and the child element border becomes darker.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <a href="javascript:" class="panel-body bk-bg-white bk-bd-info bk-bd-3x bk-fg-info bk-rd text-center">
+                        <h5 class="bk-mg-off">TASKS</h5>
+                        <i class="fa fa-tasks fa-2x bk-pd-t-10"></i>
+                        <div class="bk-bd-primary bk-bd-darken bk-bd-5x bk-fg-primary bk-mg-t-10 bk-pd-10">
+                            primary color
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="panel bk-widget bk-bd-off">
+                    <a href="javascript:" class="panel-body bk-bg-white bk-bd-success bk-bd-lighten bk-bd-3x bk-fg-success bk-rd text-center">
+                        <h5 class="bk-mg-off">UPDATES</h5>
+                        <i class="fa fa-refresh fa-2x bk-pd-t-10"></i>
+                        <div class="bk-bd-danger bk-bd-darken bk-bd-5x bk-fg-danger bk-mg-t-10 bk-pd-10">
+                            danger color
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+<pre><code>&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a href=&quot;javascript:&quot; class=&quot;panel-body bk-bg-white bk-bd-info bk-bd-3x bk-fg-info bk-rd text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;TASKS&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-tasks fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;bk-bd-primary bk-bd-darken bk-bd-5x bk-fg-primary bk-mg-t-10 bk-pd-10&quot;&gt;
+            primary color
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel bk-widget bk-bd-off&quot;&gt;
+    &lt;a href=&quot;javascript:&quot; class=&quot;panel-body bk-bg-white bk-bd-success bk-bd-lighten bk-bd-3x bk-fg-success bk-rd text-center&quot;&gt;
+        &lt;h5 class=&quot;bk-mg-off&quot;&gt;UPDATES&lt;/h5&gt;
+        &lt;i class=&quot;fa fa-refresh fa-2x bk-pd-t-10&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;bk-bd-danger bk-bd-darken bk-bd-5x bk-fg-danger bk-mg-t-10 bk-pd-10&quot;&gt;
+            danger color
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

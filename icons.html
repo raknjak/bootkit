@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="target">
+    <link href="docs/css/not-in-project.css" rel="stylesheet">
+    <link href="docs/css/atelier-dune.light.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="docs/js/html5shiv.js"></script>
+    <script src="docs/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>
+        BootKit - icons
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bk-mg-t-15">
+            <a href="index.html">BootKit home</a> &middot;
+            <a href="manual/index.html">Manual home</a>
+        </div>
+
+        <h1 class="bk-700 bk-fg-danger">ICONS</h1>
+
+        <p class="lead bk-fg-gray">
+            Adding extra styles to SVG icon sets using background, foreground and border classes.<br>
+            Icons are styled by applying classes to the parent element of the actual icon HTML code.<br>
+            Font Awesome is used as it is the most popular SVG icon set (also works with Glyphicons).
+        </p>
+
+        <hr class="bk-hr-danger">
+
+        <h2 class="bk-d-mg bk-300">Available classes</h2>
+
+        <ul class="list-unstyled">
+            <li><code>bk-icon</code>: declare a container as an icon</li>
+            <li><code>bk-icon-default</code>: sets the font-size to 14 pixels</li>
+            <li><code>bk-icon-24</code>: sets the font-size to 24 pixels and overrides the width, height and line-height.</li>
+            <li><code>bk-icon-2x</code>: should be used in combination with the fa-2x class; overrides the width, height and line-height.</li>
+            <li><code>bk-icon-3x</code>: should be used in combination with the fa-3x class; overrides the width, height and line-height.</li>
+            <li><code>bk-icon-4x</code>: should be used in combination with the fa-4x class; overrides the width, height and line-height.</li>
+            <li><code>bk-icon-5x</code>: should be used in combination with the fa-5x class; overrides the width, height and line-height.</li>
+        </ul>
+
+        <p class="lead bk-mg-off">
+            Each icon size also has a specific set of classes that make sure the line-height on each styled icon is correct.
+        </p>
+
+        <ul class="list-unstyled bk-u-mg-sm">
+            <li><code>bk-bd-2x</code>: 2 pixel border width</li>
+            <li><code>bk-bd-3x</code>: 3 pixel border width</li>
+            <li><code>bk-bd-4x</code>: 4 pixel border width</li>
+            <li><code>bk-bd-5x</code>: 5 pixel border width</li>
+            <li><code>bk-bd-off</code>: no border</li>
+        </ul>
+
+        <h4>Example</h4>
+
+        <p>
+            <strong>Both examples</strong> use <code>bk-round</code> to turn it into a circle.<br>
+            <strong>The example on the left</strong> uses <code>bk-bd-danger</code> to give it a border.<br>
+            <strong>The example on the right</strong> uses <code>bk-bg-danger</code> and <code>bk-fg-white</code> to give it a unique background and foreground color.<br>
+            <code>bk-bd-off</code> is added to correct line-height when a border is not needed. You can also put <code>bk-bd-danger</code> here, but it seems silly to define a border
+            when it is not explicitly needed.
+        </p>
+
+        <div class="clearfix">
+            <span class="bk-icon bk-icon-default bk-round bk-bd-danger pull-left">
+                <i class="fa fa-clock-o"></i>
+            </span>
+
+            <span class="bk-icon bk-icon-default bk-round bk-bg-danger bk-fg-white bk-bd-off bk-mg-l-5 pull-left">
+                <i class="fa fa-clock-o"></i>
+            </span>
+        </div>
+
+<pre class="bk-d-mg-sm"><code>&lt;span class=&quot;bk-icon bk-icon-default bk-round bk-bd-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;bk-icon bk-icon-default bk-round bk-bg-danger bk-fg-white bk-bd-off bk-mg-l-5&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <p class="alert alert-danger lead">
+            - The icon itself is surrounded by a <strong>wrapper which receives all the classes</strong>. This can be a div, span, etc.<br>
+            - Icons are using inline-block so use the class <code>.clearfix</code> when needed.<br>
+            - <strong>It is imperative to add <code>bk-bd-off</code> to all icons where you do not need a border color that is different from the background color.</strong>
+            The reason is that the line-height will be slightly adjusted to center the icon correctly vertically.
+        </p>
+
+
+        <h2 class="bk-d-mg bk-300">Sizing</h2>
+
+        <p>
+            There are 6 different icon sizes available. Font Awesome sizing classes are used to determine icon size for the 2X to 5x icon classes.
+        </p>
+
+        <h4><i class="fa fa-arrow-circle-o-right"></i> 14 pixels - <code>bk-icon-default</code></h4>
+        <span class="bk-icon bk-icon-default bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-default bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 24 pixels - <code>bk-icon-24</code></h4>
+        <span class="bk-icon bk-icon-24 bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-24 bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 2 em - <code>bk-icon-2x</code> and on the icon itself use <code>fa-2x</code></h4>
+        <span class="bk-icon bk-icon-2x bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-2x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-2x bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-2x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 3 em - <code>bk-icon-3x</code> and on the icon itself use <code>fa-3x</code></h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 4 em - <code>bk-icon-4x</code> and on the icon itself use <code>fa-4x</code></h4>
+        <span class="bk-icon bk-icon-4x bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-4x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-4x bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-4x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 5 em - <code>bk-icon-5x</code> and on the icon itself use <code>fa-5x</code></h4>
+        <span class="bk-icon bk-icon-5x bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-5x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-5x bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-5x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Shapes</h2>
+
+        <p>
+            3 different shapes are available: by default by applying <code>bk-icon</code> the border radius is equal to the @border-radius-base LESS variable
+            in Bootstrap. We can also apply <code>bk-round</code> for circular icons and <code>bk-rd-off</code> for square shapes.
+        </p>
+
+        <h4><i class="fa fa-arrow-circle-o-right"></i> Default rounded corners</h4>
+        <span class="bk-icon bk-icon-3x bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> Circular - <code>bk-round</code></h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> Square - <code>bk-rd-off</code></h4>
+        <span class="bk-icon bk-icon-3x bk-rd-off bk-bg-danger bk-fg-white bk-bd-off">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-rd-off bk-bg-danger bk-fg-white bk-bd-off&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Border thickness</h2>
+
+        <p>
+            5 border sizes are avilable from 1 to 5 pixels wide. borders are inset by default in HTML so the size of the styled icon will not differ from
+            for example one with no borders and only background color. Line-height will be adjusted according to the border thickness.
+        </p>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 1 pixel</h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bd-danger bk-fg-danger">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bd-danger bk-fg-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 2 pixels - <code>bk-bd-2x</code></h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-2x bk-fg-danger">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-2x bk-fg-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 3 pixels - <code>bk-bd-3x</code></h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-3x bk-fg-danger">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-3x bk-fg-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 4 pixels - <code>bk-bd-4x</code></h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-4x bk-fg-danger">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-4x bk-fg-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> 5 pixels - <code>bk-bd-5x</code></h4>
+        <span class="bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-5x bk-fg-danger">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </span>
+<pre class="bk-mg-t-10"><code>&lt;span class=&quot;bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-5x bk-fg-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+
+
+        <h2 class="bk-d-mg bk-300">Hover effects</h2>
+
+        <p>
+            As with all widget elements we can apply a darker or lighter effect when hovering over the BootKit icon.
+        </p>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> Border</h4>
+        <p>
+            In this specific example we use <code>bk-bd-darken</code> and also for the icon color we apply <code>bk-fg-darken</code>.
+        </p>
+
+        <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-darken bk-bd-5x bk-fg-danger bk-fg-darken">
+            <i class="fa fa-clock-o fa-3x"></i>
+        </a>
+<pre class="bk-mg-t-10"><code>&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bd-danger bk-bd-darken bk-bd-5x bk-fg-danger bk-fg-darken&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> Background</h4>
+        <p>
+            In the example on the left we use <code>bk-bg-darken</code>, in the one on the right <code>bk-bg-lighten</code>.
+        </p>
+
+        <div class="clearfix">
+            <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bg-danger bk-bg-darken bk-bd-off bk-fg-white pull-left">
+                <i class="fa fa-clock-o fa-3x"></i>
+            </a>
+
+            <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bg-danger bk-bg-lighten bk-bd-off bk-fg-white bk-mg-l-5 pull-left">
+                <i class="fa fa-clock-o fa-3x"></i>
+            </a>
+        </div>
+<pre class="bk-mg-t-10"><code>&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bg-danger bk-bg-darken bk-bd-off bk-fg-white&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bg-danger bk-bg-lighten bk-bd-off bk-fg-white bk-mg-l-5&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> Foreground</h4>
+        <p>
+            And here we simple use <code>bk-fg-danger</code> and <code>bk-fg-darken</code> or <code>bk-fg-lighten</code> to get the desired effect.
+        </p>
+
+        <div class="clearfix">
+            <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bg-white bk-bd-off bk-fg-danger bk-fg-darken pull-left">
+                <i class="fa fa-clock-o fa-3x"></i>
+            </a>
+
+            <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bg-white bk-bd-off bk-fg-danger bk-fg-lighten bk-mg-l-5 pull-left">
+                <i class="fa fa-clock-o fa-3x"></i>
+            </a>
+        </div>
+<pre class="bk-mg-t-10"><code>&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bg-white bk-bd-off bk-fg-danger bk-fg-darken&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bg-white bk-bd-off bk-fg-danger bk-fg-lighten bk-mg-l-5&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+
+        <h4 class="bk-d-mg-sm"><i class="fa fa-arrow-circle-o-right"></i> Border</h4>
+        <p>
+            And here we simple use <code>bk-fg-danger</code> and <code>bk-fg-darken</code> or <code>bk-fg-lighten</code> to get the desired effect.
+        </p>
+
+        <div class="clearfix">
+            <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bg-white bk-fg-danger bk-bd-3x bk-bd-danger bk-bd-darken pull-left">
+                <i class="fa fa-clock-o fa-3x"></i>
+            </a>
+
+            <a href="javascript:" class="bk-icon bk-icon-3x bk-round bk-bg-white bk-fg-danger bk-bd-3x bk-bd-danger bk-bd-lighten bk-mg-l-5 pull-left">
+                <i class="fa fa-clock-o fa-3x"></i>
+            </a>
+        </div>
+<pre class="bk-mg-t-10"><code>&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bg-white bk-fg-danger bk-bd-3x bk-bd-danger bk-bd-darken&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;javascript:&quot; class=&quot;bk-icon bk-icon-3x bk-round bk-bg-white bk-fg-danger bk-bd-3x bk-bd-danger bk-bd-lighten&quot;&gt;
+    &lt;i class=&quot;fa fa-clock-o fa-3x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p class="bk-d-mg">
+                <small>CURRENT VERSION: 2.0.0</small><br>
+                <small>LAST UPDATE: JANUARY 30, 2015</small>
+            </p>
+
+            <h4 class="bk-300">Created by Rakinjakk -  All codeCanyon licences apply - <a href="http://codecanyon.net/">codecanyon.net</a></h4>
+        </div>
+    </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">\x3C/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="docs/js/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
